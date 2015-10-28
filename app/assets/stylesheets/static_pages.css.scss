@@ -1,0 +1,103 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Fonts.
+h1,
+h2, {
+  font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
+}
+// end Fonts.
+
+// Navbar.
+.navbar-fixed-top{
+  background-color: #1cbbe6;
+  border: 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+  font-weight: 700;
+  font-size: 2em;
+  color: #fff;
+}
+
+.navbar-fixed-top .navbar-brand:hover {
+  color: black;
+  transition: color 300ms;
+  -webkit-transition: color 300ms;
+}
+
+.nav.navbar-nav li a {
+  color: white;
+}
+
+.navbar-fixed-top .navbar-toggle .icon-bar {
+  background-color: #1cbbe6;
+}
+
+.navbar-toggle {
+  background-color: #fff;
+  border: 0;
+}
+
+.navbar-fixed-top .navbar-toggle:hover {
+  background-color: black;
+  border: 0;
+}
+
+.navbar-fixed-top .navbar-toggle:focus {
+  background-color: black;
+  border: 0;
+}
+// ends Navbar.
+
+h1, h2 {
+  color: #1cbbe6;
+  margin-top: 50px;
+  font-size: 2em;
+}
+
+// Footer.
+.site-footer {
+  background: #1cbbe6;
+  height: 50px;
+  margin-top: 50px;
+  padding-top: 10px;
+}
+
+.footer {
+  height: 40px;
+  background-color: #1cbbe6;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-copyright {
+  font-size: .8em;
+  color: white;
+  padding-top: 10px;
+  width: 50%;
+  margin-align: 0px;
+  letter-spacing: 0.1em;
+}
+
+.fa {
+  display: inline-block;
+  padding-top: 06px;
+  margin-bottom: 10px;
+}
+
+.fa-pinterest-square {
+  color: #cc2127;
+  padding-right: 05px;
+}
+
+.fa-twitter-square {
+  color: #55acee;
+}
+// end footer */
