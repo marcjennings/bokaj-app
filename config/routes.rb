@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'static_pages/about'
+  get 'static_pages/about' # ? when we do not specify the controller and action, Rails decides
+                           # by parsing the URL. <controller>/<action>
 
   get 'static_pages/contact'
 
@@ -9,7 +10,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#index'
+  root 'static_pages#index' # if request is GET "/" then handle the 
+                            # request with "static_pages" controller and action "index"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -6,11 +6,11 @@
   <%= csrf_meta_tags %>
   <title>BokajApp</title>
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
   
   </head>
 
@@ -38,6 +38,7 @@
        </div> <!-- end collapse navbar -->
       </div> <!-- end container fluid -->
     </nav> <!-- end navbar -->
+
   
   <h1>Welcome to my shop</h1>
   <h2>Prints of my work to purchase</h2>
@@ -55,7 +56,7 @@
     <!-- end footer -->
 
 
-
+  <%= yield %>
 
 </body>
 </html>
