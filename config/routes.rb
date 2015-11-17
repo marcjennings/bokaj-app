@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'static_pages/enter'
+
+  get 'static_pages/race'
+
   get 'static_pages/about' # ? when we do not specify the controller and action, Rails decides
                            # by parsing the URL. <controller>/<action>
 
