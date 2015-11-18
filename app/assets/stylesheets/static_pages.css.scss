@@ -18,7 +18,7 @@ h2, {
 }
 
 h1, h2, h3, p {
-  color: white;
+  color: #38b4c1;
   font-size: 2em;
 }
 // end Fonts.
@@ -30,9 +30,29 @@ h1, h2, h3, p {
   border: 0;
 }
 
+.nav.navbar-nav li a {
+  color: #38b4c1;
+  font-weight: 400;
+  margin-top: 45px;
+}
+
 .navbar-default .navbar-brand  {
   padding: 15px;
   padding-top: 10px;
+}
+
+.navbar-fixed-top .navbar-toggle .icon-bar {
+  background-color: #1b1b1f;
+}
+
+.navbar-toggle {
+  background-color: #38b4c1;
+  border: 0;
+}
+
+.navbar-fixed-top .navbar-toggle:hover {
+  background-color: #38b4c1;
+  border: 0;
 }
 // ends Navbar.
 
@@ -63,7 +83,7 @@ h1, h2, h3, p {
 }
 
 hr.style2 {
-  border-top: 4px double #8c8b8b;
+  border-top: 4px double #38b4c1;
   width: 90%;
 }
 
@@ -103,7 +123,7 @@ hr.style2 {
 
 // Footer.
 .footer {
-  height: 50px;
+  height: 60px;
   background-color: #1b1b1f;
 
 }
@@ -111,7 +131,7 @@ hr.style2 {
 .footer p {
   font-size: .8em;
   color: #777;
-  padding-top: 15px;
+  padding-top: 05px;
   width: 50%;
   margin-left: 15px;
   display: inline-block;
