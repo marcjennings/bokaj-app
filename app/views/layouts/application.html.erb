@@ -12,12 +12,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   
   
-  </head>
+</head>
 
-<body>
+  <body class="<%= controller_name + ' ' + action_name %>">
 
   <!-- navbar starts here -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">

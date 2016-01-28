@@ -2,8 +2,129 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
-body {
-  background-color: #38b4c1;
+// Fonts.
+h1,
+h2, {
+  font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
 }
+
+body.products label {
+  color: black;
+  font-size: 1em;
+  font-weight: lighter;
+}
+// end Fonts.
+
+
+// body.products
+body.products {
+
+  #new-products {
+  margin-top: 110px;
+  }
+
+  #products-table { //* products/index.html *
+  margin-top: 110px;
+}
+
+  &.show {
+  background-image: image-url('res-run2.jpg');
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 0;
+  } 
+
+  #race {
+  height: 100%;
+  margin: 0px;
+  background-size: cover;
+  background-image: 
+    linear-gradient(
+      rgba(56, 180, 193, 0.5),
+      rgba(1, 1, 1, 0.8)
+      );
+  }
+} 
+//end body.products
+
+.img-responsive {
+  margin-top: 05px;
+}
+
+#races-all {
+  text-align: center;
+ }
+
+#race-info {
+  text-align: center;
+    margin-top: 50px;
+}
+
+#races-block {
+  background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
+  height: 510px;
+  width: 360px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 80px;
+  padding: 10px;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+#icons {
+  text-align: center;
+  display: inline-block;
+  float: none;
+  vertical-align: center;
+  margin-top: 10px;
+
+}
+//end body.products
+
+
+// * races page buttons *//
+.btn.btn-sm {
+  font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  background-color: none;
+  border-radius: 0;
+  color: white;
+  border: 4px double white;
+  background: none; 
+  padding: 6px 10px;
+}
+
+.btn.btn-sm:hover {
+  background-color: none;
+  color: rgb(56, 180, 193);
+  outline-style: white;
+  border: 4px double rgb(56, 180, 193);
+}
+
+#back-btn {
+  margin-top: 20px;
+}
+// * end races page buttons *//
+
+
+// horizontal rules and register button //
+hr.style1 {
+  border-color: #38b4c1;
+  margin: 05px;
+}
+
+hr.style2 {
+  border-top: 10px double #38b4c1;
+  width: 100%;
+}
+
+hr.style3 {
+  border-top: 05px double #38b4c1;
+  width: 100%;
+  margin-bottom: 10px;
+}
+// end horizontal rules and register button //

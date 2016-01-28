@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   resources :products
-  get 'static_pages/enter'
+
+  # get 'static_pages/home'
+
+  # get 'static_pages/register'
 
   get 'static_pages/race'
 
@@ -9,13 +12,15 @@ Rails.application.routes.draw do
 
   get 'static_pages/contact'
 
-  get 'static_pages/index'
+  #get 'static_pages/index'
+  get 'races/:market_name', to: 'products#show', as: :product_market_name
+  get 'races', to: "static_pages#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#index' # if request is GET "/" then handle the 
+  root 'static_pages#home' # if request is GET "/" then handle the 
                             # request with "static_pages" controller and action "index"
 
   # Example of regular route:

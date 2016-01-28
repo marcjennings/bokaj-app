@@ -1,0 +1,64 @@
+1. rails generate migration add_event_date_to_products
+2. Then inside the migraiton file we added the ActiveRecord Migraiton command:
+     add_column :products, :event_date, :datetime
+
+     http://guides.rubyonrails.org/active_record_migrations.html
+3. We did : rake db:migrate
+    which actually executed the migration
+
+4. Then we had to update the edit form in order to be able to accept the new field/property. So we amended the products/_form.html.erb
+
+5. Then we white listed the :event_date attribute inside the products_controller. Look at method "product_params"
+
+6. Then inside the static_pages/index.html.erb we made sure to display the event date of each product using strftime for formatting.
+
+/products/new  ....admin to add new products
+/products/<product_id>/edit ....admin to update product details
+/products ... admin to get the list of product and pick one to manage (update/destroy)
+
+/ ..... is designed to display all the products in order for your visitor to pick one
+/products/<product_id> its for your visitor to see the details of the product and purchase it.
+
+/views/products/show.html.erb is the view code for "/products/<product_id>" and this is the page you need to design for the product to be displayed and user to purchase.
+this view is being prepared and served by products_controller action show.
+
+>>>>>>>>>>>>>>>>>
+config/routes.rb
+  which URL goes to which controller#action
+
+  
+(for resources it can be "products" or "static_pages" or "customers" or ...)
+GET /resources
+   ---> app/controllers/resources_controller#index ---> app/views/resources/index.html.erb
+
+GET /resources/:id e.g. /products/5
+
+---> app/controllers/resources_controller#show ---> app/views/resources/show.html.erb
+
+GET /resources/:id/edit e.g. /products/5/edit (this is to fetch the form to update)
+
+---> app/controllers/resources_controllers#edit ---> app/views/resources/edit.html.erb
+
+PUT/PATCH  /resources/:id (when we want to update a resource, e.g. update product 5)
+   ---> app/controllers/resources_controller#update ---> app/views/resources/update.html.erb
+
+GET /resources/new (when we want to fetch the form to create a new resource)
+   ---> app/controllers/resources_controller#new ---> app/views/resources/new.html.erb
+
+POST /resources   (when we want to create a new resource, e.g. new product)
+   ---> app/controllers/resources_controller#create ---> app/views/resources/create.html.erb
+
+DELETE /resource/:id
+
+  ----> app/controllers/resources_controller#destroy ---> app/views/resources/destroy.html.erb
+
+
+
+
+
+
+
+
+
+
+

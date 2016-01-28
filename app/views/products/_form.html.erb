@@ -23,6 +23,14 @@
     <%= f.label :image_url %><br>
     <%= f.text_field :image_url %>
   </div>
+  <div class="field">
+    <%= f.label :event_date %><br> <!-- was this <br/> --> 
+    <%= f.date_field :event_date %>
+  </div>
+  <div class="field">
+    <%= f.label :fee %><br>
+    <%= f.text_field :fee %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

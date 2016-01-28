@@ -1,24 +1,32 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_product, only: [:edit, :update, :destroy]
+  before_action :set_product_by_market_name, only: [:show]
   # GET /products
   # GET /products.json
   def index
     @products = Product.all
   end
 
+  # def home
+  #    @products = Product.all
+  # end
+
+
   # GET /products/1
   # GET /products/1.json
   def show
+
   end
 
   # GET /products/new
   def new
     @product = Product.new
+   render layout: 'admin'
   end
 
   # GET /products/1/edit
   def edit
+    render layout: 'admin'
   end
 
   # POST /products
@@ -28,7 +36,8 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        format.html { render layout: 'admin' }
+        # format.html { redirect_to @product, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
@@ -67,8 +76,13 @@ class ProductsController < ApplicationController
       @product = Product.find(params[:id])
     end
 
+    def set_product_by_market_name
+      @product = Product.find_by_market_name(params[:market_name])
+      @product = Product.find(params[:id]) if @product.nil?
+    end  
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :image_url)
+      params.require(:product).permit(:name, :description, :image_url, :event_date, :fee)
     end
 end
