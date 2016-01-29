@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   resources :products
 
-  # get 'static_pages/home'
-
-  # get 'static_pages/register'
+    # Resources for Orders
+  resources :orders, only: [:index, :show, :create, :destroy]
 
   get 'static_pages/race'
 
