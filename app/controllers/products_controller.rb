@@ -7,8 +7,8 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
-  # def home
-  #    @products = Product.all
+  # def contact
+  #    @products = Products.limit(3)
   # end
 
 

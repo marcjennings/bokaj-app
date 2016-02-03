@@ -12,6 +12,7 @@ class StaticPagesController < ApplicationController
   
   def contact
     Rails.logger.debug "I am inside contact action of static pages controller"
+    @products = Product.limit(3)
   end
 
   # def register

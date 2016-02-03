@@ -263,6 +263,53 @@ body.static_pages.contact {
   margin-bottom: 0;
   margin-top: 50px;
 }
+
+#contact {
+  height: 100%;
+  margin: 0px; 
+  background-image: 
+    linear-gradient(
+      rgba(56, 180, 193, 0.5),
+      rgba(1, 1, 1, 0.8)
+      );
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+#carousel-caption {
+  margin-top: 100px;
+}
+
+#contact-blue {
+  background-color: rgba(56, 180, 193, 0.6); // * Blue as rgba. *
+  height: 294px;
+  width: 550px;}
+
+  .carousel-indicators {
+    bottom: -50px;
+  }
+ .carousel-inner {
+    margin-bottom: 50px;
+ }
+
+ .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
+  position: static;
+  display: block;
+  width: auto;
+  margin-top: 310px;
+}
+// #contact-black {
+//   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
+//   height: 500px;
+//   width: 500px;
+//   padding: 10px;
+//   margin: 05px;
+// }
+
 // ends Contact page.
 
 // About page.
@@ -286,6 +333,7 @@ body.static_pages.about {
       );
 }
 
+// ends colour blocks.
 #black {
   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
   height: 500px;
@@ -293,7 +341,16 @@ body.static_pages.about {
   padding: 10px;
   margin: 05px;
 }
-// ends Register page.
+
+#blue {
+  background-color: rgba(56, 180, 193, 0.6); // * Blue as rgba. *
+  height: 500px;
+  width: 380px;
+  padding: 10px;
+  margin: 05px;
+}
+
+// ends colour blocks.
 
 
 
