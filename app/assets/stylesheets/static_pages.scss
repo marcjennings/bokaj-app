@@ -253,6 +253,38 @@ body.static_pages.home {  //had been changed to body only for image but didnt wo
 }
 // * ends Home page //
 
+// About page.
+body.static_pages.about {
+  background-image: image-url('res-run2.jpg');
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+#about {
+  height: 100%;
+  margin: 0px; 
+  background-image: 
+    linear-gradient(
+      rgba(56, 180, 193, 0.5),
+      rgba(1, 1, 1, 0.8)
+      );
+
+#about-blue {
+  background-color: rgba(56, 180, 193, 0.6); // * Blue as rgba. *
+  height: 500px;
+  width: 550px;}
+}
+
+#about-back-btn {
+  margin-top: 80px;
+}
+
+// ends About page.
+
 // Contact page.
 body.static_pages.contact {
   background-image: image-url('res-run2.jpg');
@@ -302,6 +334,10 @@ body.static_pages.contact {
   width: auto;
   margin-top: 310px;
 }
+
+#contact-back-btn{
+  margin-top: 286px;
+}
 // #contact-black {
 //   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
 //   height: 500px;
@@ -312,8 +348,8 @@ body.static_pages.contact {
 
 // ends Contact page.
 
-// About page.
-body.static_pages.about {
+// Login page.
+body.static_pages.login {
   background-image: image-url('res-run2.jpg');
   position: relative;
   width: 100%;
@@ -323,7 +359,7 @@ body.static_pages.about {
   margin-top: 50px;
 }
 
-#about {
+#login {
   height: 100%;
   margin: 0px; 
   background-image: 
@@ -333,7 +369,24 @@ body.static_pages.about {
       );
 }
 
-// ends colour blocks.
+#login-black {
+  background-color: rgba(56, 180, 193, 0.7); // * Black as rgba. *
+  height: 50px;
+  width: 500px;
+  margin-top: 300px;
+}
+
+#login-black:hover {
+  background-color: rgba(1, 1, 1, 0.7); // * Black as rgba. *
+  height: 50px;
+  width: 500px;
+  margin-top: 300px;
+}
+// ends Login page.
+
+
+
+// colour blocks.
 #black {
   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
   height: 500px;

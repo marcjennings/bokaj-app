@@ -1,12 +1,21 @@
 <div class="container-fluid" id="about">
-  <div class="container">
-  	<div class="row" id="info-blocks">
-    	
-      <div class="col-xs-12 col-md-4" id="blue"></div>
-      <div class="col-xs-12 col-md-4" id="black"></div>
-      <div class="col-xs-12 col-md-4" id="blue"></div>
+  <div class="row" id="info-blocks">
+    <div class="center-block" id="about-blue">
+      <p id="p01-white">
+        The Reservoir run series will take place at various reservoirs around the UK over the course of the year. Races will have different distances for all ages and abilities and routes will include roads and trails. <br>
 
+        All entrants will recieve a number and a chipped time as well as a swag bag with finnishers T-shirt and medal.
+      </p>
+    </div>
 
-    </div> <!-- end row -->
-   </div> <!-- end container -->
-</div> <!-- end jumbotron -->
+  </div> <!-- end row -->
+
+ <div class="center-block text-center" id="about-back-btn">
+    <div class="row">
+    <div class="col-xs-12 col-md-4 col-md-offset-4"> 
+      <%= link_to 'Back', races_path, class: 'btn btn-sm'%>
+    </div>
+  </div> <!-- row ends -->
+</div>
+
+</div> <!-- end about -->

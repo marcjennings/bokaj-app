@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :products
 
-    # Resources for Orders
+  # Resources for Orders
   resources :orders, only: [:index, :show, :create, :destroy]
 
   get 'static_pages/race'
@@ -10,6 +10,8 @@ Rails.application.routes.draw do
                            # by parsing the URL. <controller>/<action>
 
   get 'static_pages/contact'
+
+  get 'static_pages/login'
 
   #get 'static_pages/index'
   get 'races/:market_name', to: 'products#show', as: :product_market_name
