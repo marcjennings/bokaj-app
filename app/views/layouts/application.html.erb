@@ -35,13 +35,23 @@
       </div> <!--end navbar header -->
             
       <div class="collapse navbar-collapse" id="myNavbar">
+        <form class="navbar-form navbar-right" role="search">
+          
+          <div class="form-group">
+            <%= form_tag("/products", method: "get") do %>
+              <%= text_field_tag(:q) %>
+              <%= submit_tag("Search") %>
+            <% end %>
+          </div>
+        </form>
+        
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "About", static_pages_about_path %></li>
-           <li><%= link_to "Contact", static_pages_contact_path %></li>
+          <li><%= link_to "Contact", static_pages_contact_path %></li>
           <li><%= link_to "Login", static_pages_login_path %></li>
         </ul>
       </div> <!-- end collapse navbar -->
-    </div> <!-- end container fluid -->
+     </div> <!-- end container fluid -->
   </nav> <!-- end navbar -->
 
   <%= yield %>
