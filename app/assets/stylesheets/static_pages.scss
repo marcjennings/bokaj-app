@@ -70,7 +70,8 @@ p#p05 {
 .nav.navbar-nav li a {
   color: #38b4c1;
   font-weight: 400;
-  margin-top: 45px;
+  margin-top: 0px;
+  padding-top: 08px;
 }
 
 .navbar-default .navbar-brand  {
@@ -311,12 +312,10 @@ body.static_pages.contact {
       );
 }
 
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#contact-info {
   margin-top: 80px;
 }
+
 #carousel-caption {
   margin-top: 100px;
 }
@@ -324,7 +323,16 @@ body.static_pages.contact {
 #contact-blue {
   background-color: rgba(56, 180, 193, 0.6); // * Blue as rgba. *
   height: 294px;
-  width: 550px;}
+  width: 400px;
+  margin-right: 10px;
+}
+
+
+#contact-black {
+  background-color: rgba(1, 1, 1, 0.6); // * Blue as rgba. *
+  height: 294px;
+  width: 400px;
+}
 
   .carousel-indicators {
     bottom: -50px;
@@ -341,8 +349,9 @@ body.static_pages.contact {
 }
 
 #contact-back-btn{
-  margin-top: 200px;
+  margin-top: 100px;
 }
+
 // #contact-black {
 //   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
 //   height: 500px;
@@ -350,6 +359,49 @@ body.static_pages.contact {
 //   padding: 10px;
 //   margin: 05px;
 // }
+
+// contact form.
+#name.form-control {
+  background-color: rgba(1, 1, 1, 0.7);
+  border: none;
+  border-radius: 0;
+}
+
+#email.form-control {
+  background-color: rgba(1, 1, 1, 0.7);
+  border: none;
+  border-radius: 0;
+}
+
+#message.form-control {
+  background-color: rgba(1, 1, 1, 0.7);
+  border: none;
+  border-radius: 0;
+}
+// end contact form.
+
+
+// Thank You page.
+#thank-you {
+  background-color: #38b4c1;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+#thank-you h2 {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 5em;
+}
+// end Thank You page.
 
 // ends Contact page.
 
@@ -387,9 +439,11 @@ body.static_pages.login {
   width: 500px;
   margin-top: 300px;
 }
+
+#login-back-btn {
+  margin-top: 20px;
+}
 // ends Login page.
-
-
 
 // colour blocks.
 #black {
@@ -407,8 +461,11 @@ body.static_pages.login {
   padding: 10px;
   margin: 05px;
 }
-
 // ends colour blocks.
+
+// *mailer, contact form.
+
+// ends mailer, contact form.
 
 
 

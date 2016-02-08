@@ -1,6 +1,6 @@
 <div class="container-fluid" id="contact">
   <div class="row" id="contact-info">
-    	<div class="center-block" id="contact-blue">
+    	<div class="col-xs-12 col-md-4 col-md-offset-2" id="contact-blue">
 
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- indicators -->
@@ -30,15 +30,41 @@
         </a>
 
         </div> <!-- end carousel-example-generic -->
-      
     </div> <!-- end contact-blue -->
+
+    <div class="col-xs-12 col-md-12" id="contact-black">
+      
+      <h1>Contact Us</h1>
+      <% flash[:notice] %>
+      <%= form_tag("/static_pages/thank_you") do %>
+      <div class="row">
+        
+        <div class="col-md-12">
+          <div class="form-group" id="contact-form">
+           <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+          </div> <!-- end form-group -->
+
+          <div class="form-group">
+           <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+          </div> <!-- end form-group -->
+
+          <div class="form-group">
+           <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+          </div> <!-- end form-group -->
+        </div> <!-- end col-md-4 -->
+      
+      </div> <!-- end row -->
+      <%= submit_tag "Send" %>
+      <% end %>
+
+    </div> <!-- end contact-black -->
+  
   </div> <!-- end contact-info -->
 
    <div class="center-block text-center" id="contact-back-btn">
     <div class="row">
-    <div class="col-xs-12 col-md-4 col-md-offset-4"> 
       <%= link_to 'Back', races_path, class: 'btn btn-sm'%>
-    </div>
-  </div> <!-- row ends -->
+    </div> <!-- row ends -->
+
 </div>
 </div> <!-- end contact -->
