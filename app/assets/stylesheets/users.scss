@@ -1,0 +1,109 @@
+// Index page.
+body.sessions.new {  //had been changed to body only for image but didnt work//
+  background-image: image-url('res-run-road.jpg');
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+#log-in {
+  height: 100%;
+  margin: 0px;
+
+  background-image: 
+    linear-gradient(
+      rgba(56, 180, 193, 0.5),
+      rgba(1, 1, 1, 0.8)
+      );
+}
+
+#log-in-row {
+  text-align: center;
+  margin-top: 60px;
+ }
+
+ #log-in-block {
+  background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
+  height: 350px;
+  width: 400px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 10px;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+ .actions {
+ 	margin-top: 20px;
+ 	margin-bottom: 20px;
+ }
+
+ #user_email {
+  border: 0;
+  background-color: rgba(1, 1, 1, 0.6);
+ }
+
+#user_password {
+  border: 0;
+  background-color: rgba(1, 1, 1, 0.6);
+ }
+
+ .field label{
+  color: #226e77;
+  letter-spacing: 1px;
+ }
+
+.field input {
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 2px;
+ }
+
+ .devise-links a {
+ 	margin-bottom: 50px;
+  color: #38b4c1;
+ }
+
+  .devise-links a:hover {
+    text-decoration: none;
+    color: #ffffff;
+ }
+
+ body.registrations.new {  //had been changed to body only for image but didnt work//
+  background-image: image-url('res-run-road.jpg');
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+#registrations-new {
+  height: 100%;
+  margin: 0px;
+  background-image: 
+    linear-gradient(
+      rgba(56, 180, 193, 0.5),
+      rgba(1, 1, 1, 0.8)
+      );
+}
+
+#reg-new-row {
+  text-align: center;
+  margin-top: 60px;
+ }
+
+ #reg-new-block {
+  background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
+  height: 350px;
+  width: 400px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 10px;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}

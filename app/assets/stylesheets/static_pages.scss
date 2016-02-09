@@ -65,6 +65,7 @@ p#p05 {
   height: 85px;
   background-color: #1b1b1f;
   border: 0;
+  margin-bottom: 0px;
 }
 
 .nav.navbar-nav li a {
@@ -129,7 +130,7 @@ body.static_pages.index {  //had been changed to body only for image but didnt w
   height: 100vh;
   background-size: cover;
   margin-bottom: 0;
-  margin-top: 50px;
+
 }
 
 #index {
@@ -299,7 +300,6 @@ body.static_pages.contact {
   height: 100vh;
   background-size: cover;
   margin-bottom: 0;
-  margin-top: 50px;
 }
 
 #contact {

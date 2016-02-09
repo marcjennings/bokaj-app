@@ -1,0 +1,43 @@
+<div class="container-fluid" id="log-in">
+  <div class="row row-centered" id="log-in-row">
+    <div class="col-md-4 col-md-offset-4" id="log-in-block">
+  
+  <h2>Log in</h2>
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end -%>
+
+  <div class="actions">
+    <%= f.submit "Login" %>
+  </div>
+<% end %>
+
+<div class="devise-links">
+  <%= render "devise/shared/links" %>
+</div>
+</div> <!-- end col-md-4 -->
+</div> <!-- end row log-in-block -->
+
+
+  <div class="center-block text-center" id="login-back-btn">
+    <div class="row">
+      <%= link_to 'Back', races_path, class: 'btn btn-sm'%>
+    </div> <!-- row ends -->
+</div>
+
+</div> <!--end log-in -->
