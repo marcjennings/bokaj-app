@@ -122,6 +122,25 @@ p#p05 {
 }
 // end Footer */
 
+// // Alert and Notice.
+#messages {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#notice {
+  color: #1b1b1f;
+  font-weight: 600;
+}
+
+#notice.alert-info {
+  background-color: #38b4c1;
+  border: 0;
+  border-radius: 0;
+  margin-top: 10px;
+}
+// // ends Alert and  Notice */
+
 // Index page.
 body.static_pages.index {  //had been changed to body only for image but didnt work//
   background-image: image-url('res-run2.jpg');

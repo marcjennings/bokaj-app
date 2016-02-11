@@ -33,5 +33,22 @@
       
   </div> <!-- reg-btn row ends -->
 
+    <div class="row" id="messages">
+      <div class="col-sm-12 col-md-4 col-md-offset-4">
+    <div class="alert">
+    <% if notice %>
+      <p id="notice" class="alert alert-info"><%= notice %></p>
+    <% end %>
+  </div>
+
+  
+  <div class="alert">
+    <% if alert %>
+      <p id="alert" class="alert alert-info"><%= alert %></p>
+    <% end %>
+  </div>
+</div>
+</div> <!-- end messages -->
+
 </div> --> <!-- end container-fluid -->
 
