@@ -9,6 +9,8 @@ class StaticPagesController < ApplicationController
   def about
     Rails.logger.debug "I am inside about action of static pages controller"
   end
+
+
   
   def contact
     Rails.logger.debug "I am inside contact action of static pages controller"

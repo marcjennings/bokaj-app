@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users 
+ 
+  resources :products do
+    resources :comments
+  end
   resources :users
-  resources :products
 
   # Resources for Orders
   resources :orders, only: [:index, :show, :create, :destroy]
@@ -19,6 +22,9 @@ Rails.application.routes.draw do
   post 'static_pages/thank_you'
 
   get 'static_pages/login'
+
+  get 'static_pages/comments'
+
 
   #get 'static_pages/index'
   get 'races/:market_name', to: 'products#show', as: :product_market_name
