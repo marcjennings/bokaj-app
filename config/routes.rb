@@ -26,6 +26,10 @@ Rails.application.routes.draw do
 
   get 'static_pages/review'
 
+  get'comments/index'
+
+
+
 
   #get 'static_pages/index'
   get 'races/:market_name', to: 'products#show', as: :product_market_name
