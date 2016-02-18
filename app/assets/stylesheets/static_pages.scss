@@ -77,7 +77,14 @@ p#p05 {
 
 .navbar-default .navbar-brand  {
   padding-left: 10px;
-  padding-top: 10px;
+
+}
+
+.navbar-brand {
+  width: 140px;
+  margin-top: 0px;
+  margin-left: 05px;
+  padding-top: 05px;
 }
 
 .navbar-fixed-top .navbar-toggle .icon-bar {
@@ -116,6 +123,7 @@ p#p05 {
   padding-top: 10px;
   width: 50%;
   margin-left: 15px;
+  padding-left: 10px;
   display: inline-block;
   letter-spacing: 0.1em;
   text-align: left;
@@ -463,6 +471,47 @@ body.static_pages.login {
   margin-top: 20px;
 }
 // ends Login page.
+
+// Review page.
+body.comments.index {  
+  background-image: image-url('review2-crop.jpg');
+  background-repeat: no-repeat;
+  background-position: 0% 100%; 
+}
+
+#reviews {
+  margin-top: 85px;
+  position: relative;
+  background-image: 
+    linear-gradient(
+      rgba(56, 180, 193, 0.5),
+      rgba(1, 1, 1, 0.8)
+      );
+}
+
+#left-block {
+  margin-top: 40px;
+
+}
+
+#race-date {
+
+}
+
+#h-rules{
+  margin-top: 200px;
+  padding: 0;
+}
+
+#right-block {
+  background-color: #38b4c1;
+  height: 660px;
+}
+
+#review-comment {
+  margin-top: 40px;
+}
+// ends Review page.
 
 // colour blocks.
 #black {

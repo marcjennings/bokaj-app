@@ -1,3 +1,79 @@
-// Place all the styles related to the comments controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// Fonts.
+
+h1, h2, h3, p {
+  color: #38b4c1;
+  font-size: 2em;
+}
+
+p#p01 {
+  font-size: 1.4em;
+  letter-spacing: -0.5px;
+  line-height: 115%;
+  color: #38b4c1;
+}
+
+p#p01-review{
+  font-size: 1.4em;
+  letter-spacing: -0.3px;
+  line-height: 115%;
+  color: white;
+}
+
+p#p01-comment {
+  font-size: 1.4em;
+  letter-spacing: -0.3px;
+  line-height: 115%;
+  color: white;
+  margin-top: 10px;
+}
+
+p#p01-time {
+  font-size: 1.4em;
+  letter-spacing: -0.3px;
+  line-height: 115%;
+  color: #1b1b1f;
+}
+
+p#p02 {
+  font-size: 1.2em;
+  line-height: 115%;
+  color: #38b4c1;
+}
+
+p#p03 {
+  font-size: 2.5em;
+}
+
+p#p04 {
+  font-size: 3em;
+  font-weight: 200;
+   color: white;
+}
+
+p#p05 {
+  font-size: 2em;
+  font-weight: 200;
+  color: white;
+  margin-top: 20px;
+}
+// end Fonts.
+
+// Pagination.\
+.pagination a{
+	color: white;
+}
+
+.span.previous_page.disabled a {
+	color: white;
+}
+// ends Pagination
+
+#comment_body {
+	margin-top: 06px;
+	padding-top: 0;
+}
+
+.product-reviews{
+	padding-left: 20px;
+	padding-right: 20px;
+}

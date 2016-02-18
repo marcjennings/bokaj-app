@@ -1,0 +1,27 @@
+ <% if signed_in? %> 
+  <p id="p01-review">Add a review:</p>
+    <%= form_for([@product, @product.comments.build]) do |f| %>
+      <% if @comment.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+
+          <ul>
+          <% @comment.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+      
+      <p id="p01-comment"><%= f.label :body, "Comments" %><br></p>
+      <p><%= f.text_area :body %></p>
+      
+      <p>
+        <div class="rating"></div>
+      </p>
+
+      <p>
+        <%= f.submit "Submit", class: 'btn btn-sm' %>
+      </p>
+    <% end %>
+  <% end %>  <!-- ends comments and rating -->

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
  
   resources :products do
     resources :comments
+    # GET /products/:product_id/comments/new ===> views/comments/new.html.erb
   end
   resources :users
 
@@ -23,7 +24,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/login'
 
-  get 'static_pages/comments'
+  get 'static_pages/review'
 
 
   #get 'static_pages/index'
