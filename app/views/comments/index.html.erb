@@ -1,5 +1,5 @@
 <div class="container-fluid" id="reviews">
-  <div class="row">
+  <div class="row" id="image-review">
   
   <div class="col-xs-12 col-md-4" id="left-block">
     <div class="row">
@@ -25,11 +25,9 @@
       <div class="row" id="review-comment">
         <div class="col-xs-12 col-md-6" id="user-review">
          
-         <%= render partial: "new_comment" %>
-       
-            <!-- comments and rating -->
-      
-            <!-- ends comments and rating -->
+         <!-- comments and rating -->
+          <%= render partial: "new_comment" %>
+          <!-- ends comments and rating -->
         </div> <!-- end user-review -->
 
          <div class="col-xs-12 col-md-6" id="other-review">

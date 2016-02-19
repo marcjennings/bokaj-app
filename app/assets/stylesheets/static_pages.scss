@@ -472,47 +472,6 @@ body.static_pages.login {
 }
 // ends Login page.
 
-// Review page.
-body.comments.index {  
-  background-image: image-url('review2-crop.jpg');
-  background-repeat: no-repeat;
-  background-position: 0% 100%; 
-}
-
-#reviews {
-  margin-top: 85px;
-  position: relative;
-  background-image: 
-    linear-gradient(
-      rgba(56, 180, 193, 0.5),
-      rgba(1, 1, 1, 0.8)
-      );
-}
-
-#left-block {
-  margin-top: 40px;
-
-}
-
-#race-date {
-
-}
-
-#h-rules{
-  margin-top: 200px;
-  padding: 0;
-}
-
-#right-block {
-  background-color: #38b4c1;
-  height: 660px;
-}
-
-#review-comment {
-  margin-top: 40px;
-}
-// ends Review page.
-
 // colour blocks.
 #black {
   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *

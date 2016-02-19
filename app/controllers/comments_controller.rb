@@ -25,9 +25,9 @@ class CommentsController < ApplicationController
   def index
     @product = Product.find(params[:product_id])
     #@comments =  Comment.where(product_id: @product.id).order(“id desc”)
-    @comments = @product.comments.order("id desc")
+    @comments = @product.comments.order("id desc").paginate(per_page: 3, page: params[:page])
     @comment = Comment.new(product: @product)
-    @comments = Comment.paginate :per_page =>3, :page => params[:page]
+   
 
 
   end  

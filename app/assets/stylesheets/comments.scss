@@ -68,12 +68,53 @@ p#p05 {
 }
 // ends Pagination
 
-#comment_body {
-	margin-top: 06px;
-	padding-top: 0;
+// Review page.
+body.comments.index {  
+  background-image: image-url('review2-crop.jpg');
+  background-repeat: no-repeat;
+  background-position: 0% 100%; 
 }
 
-.product-reviews{
-	padding-left: 20px;
-	padding-right: 20px;
+#reviews {
+  margin-top: 85px;
+  position: relative;
+  background-image: 
+    linear-gradient(
+      rgba(56, 180, 193, 0.5),
+      rgba(1, 1, 1, 0.8)
+      );
 }
+
+#left-block {
+  margin-top: 40px;
+}
+
+#h-rules{
+  margin-top: 200px;
+  padding: 0;
+}
+
+#right-block {
+  background-color: #38b4c1;
+  height: 660px;
+}
+
+#review-comment {
+  margin-top: 40px;
+}
+
+#comment_body {
+  margin-top: 0.6px;
+  padding-top: 0;
+}
+
+.product-reviews {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// #image-review {
+//   margin-right: 0px;
+//   margin-left: 0px;
+// }
+// ends Review page.
