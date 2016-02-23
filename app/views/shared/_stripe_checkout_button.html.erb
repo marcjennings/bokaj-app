@@ -1,8 +1,9 @@
 <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
     data-key="<%=  Rails.configuration.stripe[:publishable_key] %>"
-    data-image="..."
+    data-image="<%= image_path("res-r.png") %>"
     data-name="The Reservoir Run Series"
-    data-description="..."
-   	data-amount="...">
+    data-description="<%= @product.name %>"
+   	data-amount="<%= @product.fee * 100 %>"
+    data-currency="GBP">
   </script>

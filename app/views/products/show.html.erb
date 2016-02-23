@@ -29,7 +29,7 @@
        <hr class="style1">
 
       <p id="p04">
-        <%= @product.fee %>
+        <%= number_to_currency(@product.fee, unit: '£') %>
       </p>
 
       <%= form_tag "/payments/create" do %>
