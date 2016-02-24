@@ -1,9 +1,11 @@
 <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="<%=  Rails.configuration.stripe[:publishable_key] %>"
+    data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
     data-image="<%= image_path("res-r.png") %>"
     data-name="The Reservoir Run Series"
     data-description="<%= @product.name %>"
    	data-amount="<%= @product.fee * 100 %>"
     data-currency="GBP">
-  </script>
+</script>
+
+<%= hidden_field_tag :product_id, @product.id %>

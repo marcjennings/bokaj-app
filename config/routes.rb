@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   # Resources for Orders
   resources :orders, only: [:index, :show, :create, :destroy]
 
+
   # Login and Logout parameters
   # devise_for :users :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
 
@@ -26,7 +27,10 @@ Rails.application.routes.draw do
 
   get 'static_pages/review'
 
-  get'comments/index'
+  get 'comments/index'
+
+  post 'payments/create'
+  get  'payments/order_done'
 
 
 
