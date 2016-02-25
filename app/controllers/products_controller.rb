@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    if params[:q]
+   if params[:q]
       search_term = params[:q]
       @products = Product.where("name LIKE ?", "%#{search_term}%")
     else
@@ -29,6 +29,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
+    byebug
     @product = Product.new
    render layout: 'admin'
   end
