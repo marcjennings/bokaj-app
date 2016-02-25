@@ -78,5 +78,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Sets Warning notices of logger
-  Rails.logger.level =2
+  Rails.logger.level =0
 end
