@@ -31,7 +31,7 @@ class ProductsController < ApplicationController
   def new
     byebug
     @product = Product.new
-   render layout: 'admin'
+    render layout: 'admin'
   end
 
   # GET /products/1/edit
