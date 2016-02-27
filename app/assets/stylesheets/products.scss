@@ -158,3 +158,23 @@ hr.style3 {
   margin-bottom: 10px;
 }
 // end horizontal rules and register button //
+
+// Google map.
+#map {
+  width: 100%;
+  height: 250px;
+ }
+
+ #map.water{
+  color: #38b4c1;
+ }
+
+ // end Google map//
+
+ // Race modal //
+ #race-route {
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+}
+ // end Race modal //

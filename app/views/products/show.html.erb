@@ -85,17 +85,50 @@
      
     <div class="col-xs-12 col-md-4 col-centered" id="races-block">
       <hr class="style1">
-      <p>
-        <strong>Course Map:</strong>
-        <%= @product.market_name %>
-      </p>
-      <hr class="style1">
+      
+      <div id="map"></div>
+      <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 54.8649499, lng: -1.9868924},
+          zoom: 12
+        });
+      }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSgdzLZ0J0bdxnpJ2KXMNR6U5ng6F4mh0&callback=initMap"
+      async defer>
+      </script>
+      
+    <hr class="style1">
     
-      <p>
-         <strong>Course Elevation:</strong>
-        <%= @product.description %>
-      </p>
-      <hr class="style1">
+    <div class="row">
+      <h1 class="learn-more">Race info and Routes</h1>
+        
+      <!-- Small modal button -->
+      <div class="modal-button">
+        <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">view file</button>
+      </div><!-- end Small modal button -->
+
+      <!-- Large modal -->
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-label-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="myModalLabel">Race Routes</h1>
+            </div>
+              
+              <div class="modal-body">
+                <embed id="race-route" <%= image_tag ('race-route-map.pdf')%>>
+              </div>
+          </div><!-- end Modal-content -->
+        </div><!-- end Modal-dialog-lg -->
+       </div><!--  end Modal -->
+    </div> <!-- end row  -->
+
+    <hr class="style1">
 
       <%= link_to 'Review', product_comments_path(@product), class: 'btn btn-sm' %>
     </div>
