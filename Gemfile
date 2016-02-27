@@ -67,6 +67,10 @@ group :development do
 
   # Spork works with Guard to speed up automated testing
   gem 'spork-rails'
+
+  # Brakeman
+  gem 'brakeman', '~> 3.2', '>= 3.2.1'
+
 end
 
 group :production do
@@ -82,6 +86,8 @@ gem 'cancancan', '~> 1.10'
 
 # Pagination
 gem 'will_paginate', '~> 3.0.5'
+
+
 
 
 

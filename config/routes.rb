@@ -32,6 +32,8 @@ Rails.application.routes.draw do
   post 'payments/create'
   get  'payments/order_done'
 
+  get '/passwords/edit'
+
 
 
 
