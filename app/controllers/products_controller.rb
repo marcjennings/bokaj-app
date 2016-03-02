@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  respond_to :json, :html
   before_action :set_product, only: [:edit, :update, :destroy]
   before_action :set_product_by_market_name, only: [:show]
   # GET /products
@@ -10,6 +11,7 @@ class ProductsController < ApplicationController
     else
       @products = Product.order(:name)
     end
+    respond_with @products
   end
 
   # def contact
