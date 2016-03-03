@@ -15,9 +15,13 @@
   </thead>
 
   <tbody>
+
     <% @products.each do |product| %>
-      <%= render @products %>
+    <% cache(cache_key_for_products) do %>
+    <%= render @products %>
+    <% end %> <!-- end cache -->
     <% end %>
+
   </tbody>
 </table>
 

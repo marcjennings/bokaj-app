@@ -2,6 +2,7 @@
   
   <div class="row row-centered" id="race-info">
     <div class="col-xs-12 col-md-4 col-centered" id="races-block">
+   
       <p>
         <%= image_tag @product.image_url, class:"img-responsive" %>
       </p>
@@ -9,10 +10,11 @@
     <!-- <p id="notice"><%= notice %></p> -->
 
     <hr class="style1">
-      
+      <% cache @product do %>
       <p>
         <strong><%= @product.market_name %></strong>
       </p>
+      <% end %>
 
       <hr class="style1">
       
@@ -35,6 +37,7 @@
       <%= form_tag "/payments/create" do %>
       <%= render partial: "shared/stripe_checkout_button" %>
       <% end %>
+    
     </div>
 
     <div class="col-xs-12 col-md-4 col-centered" id="races-block">

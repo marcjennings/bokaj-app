@@ -29,6 +29,9 @@ gem 'stripe'
 # AngularJS
 gem 'angularjs-rails'
 
+# Memcached
+gem 'dalli'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
