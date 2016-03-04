@@ -30,7 +30,9 @@ gem 'stripe'
 gem 'angularjs-rails'
 
 # Memcached
-gem 'dalli'
+# gem 'dalli'
+
+gem 'redis-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

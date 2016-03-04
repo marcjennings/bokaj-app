@@ -71,7 +71,6 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     concurrent-ruby (1.0.0)
-    dalli (2.7.6)
     debug_inspector (0.0.2)
     devise (3.5.6)
       bcrypt (~> 3.0)
@@ -192,6 +191,23 @@ GEM
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rdoc (4.2.0)
+    redis (3.2.2)
+    redis-actionpack (4.0.1)
+      actionpack (~> 4)
+      redis-rack (~> 1.5.0)
+      redis-store (~> 1.1.0)
+    redis-activesupport (4.1.5)
+      activesupport (>= 3, < 5)
+      redis-store (~> 1.1.0)
+    redis-rack (1.5.0)
+      rack (~> 1.5)
+      redis-store (~> 1.1.0)
+    redis-rails (4.0.0)
+      redis-actionpack (~> 4)
+      redis-activesupport (~> 4)
+      redis-store (~> 1.1.0)
+    redis-store (1.1.7)
+      redis (>= 2.2)
     responders (2.1.1)
       railties (>= 4.2.0, < 5.1)
     rest-client (1.8.0)
@@ -291,7 +307,6 @@ DEPENDENCIES
   byebug
   cancancan (~> 1.10)
   coffee-rails (~> 4.1.0)
-  dalli
   devise
   factory_girl_rails (~> 4.0)
   guard
@@ -303,6 +318,7 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.2.5.1)
   rails_12factor
+  redis-rails
   rspec-rails (~> 3.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
