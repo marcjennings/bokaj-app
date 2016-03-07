@@ -6,49 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
   <title>BokajApp</title>
-  
 
+  <link rel="stylesheet" href="https://checkout.stripe.com/v3/checkout/button.css"></link>
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
-
-  
-  
 </head>
 
   <body class="<%= controller_name + ' ' + action_name %>">
 
-
-
-  <!-- navbar starts here -->
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>            
-        </button>
-        <div class="navbar-brand">
-          <%= link_to root_path do %>
-            <%= image_tag ("res-series-sm.svg"), class:"img-responsive"%> 
-          <% end %>
-        </div>
-      </div> <!--end navbar header -->
-            
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <form class="navbar-form navbar-right" role="search">
-          
-          <div class="form-group">
-            <%= form_tag("/products", method: "get") do %>
-              <%= text_field_tag(:q) %>
-              <%= submit_tag("Search") %>
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>            
+          </button>
+          <div class="navbar-brand">
+            <%= link_to root_path do %>
+              <%= image_tag ("res-series-sm.svg"), class:"img-responsive"%> 
             <% end %>
           </div>
-        </form>
+        </div> <!--end navbar header -->
+              
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <form class="navbar-form navbar-right" role="search">
+            
+            <div class="form-group">
+              <%= form_tag("/products", method: "get") do %>
+                <%= text_field_tag(:q) %>
+                <%= submit_tag("Search") %>
+              <% end %>
+            </div>
+          </form>
+<!-- 
+        <div id="sb-search" class="sb-search">
+          <form>
+            <input class="sb-search-input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+            <input class="sb-search-submit" type="submit" value="">
+            <span class="sb-icon-search"></span>
+          </form>
+        </div> -->
         
         <ul class="nav navbar-nav navbar-right" style="clear:both;">
           <li>
@@ -58,26 +62,22 @@
               <%= link_to('Login', new_user_session_path) %>
             <% end %>
           </li>
-          <li><%= link_to "About", static_pages_about_path %></li>
-          <li><%= link_to "Contact", static_pages_contact_path %></li>
+            <li><%= link_to "About", static_pages_about_path %></li>
+            <li><%= link_to "Contact", static_pages_contact_path %></li>
         </ul>
       </div> <!-- end collapse navbar -->
      </div> <!-- end container fluid -->
-  </nav> <!-- end navbar -->
-
+    </nav> <!-- end navbar -->
 
 <%= yield %>
 
     <!-- footer -->
     <footer class="footer">
-      
-        <div class="footer-copyright">
-          <p>&copy;Marc Jennings 2015</p>
+      <div class="footer-copyright">
+        <p>&copy;Marc Jennings 2015</p>
         </div>
-      
     </footer>
     <!-- end footer -->
 
-
-</body>
+  </body>
 </html>

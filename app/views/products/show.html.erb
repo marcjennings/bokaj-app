@@ -50,19 +50,19 @@
       <hr class="style1">
     
       <div class="row" id="icons">
-      <div class="col-sm-6 col-md-3">
+      <div class="col-xs-3">
         <%= image_tag ('run-numb-icon.png'), class:"img-responsive"%>
       </div>
 
-       <div class="col-sm-6 col-md-3">
+       <div class="col-xs-3">
         <%= image_tag ('stop-watch-icon.png'), class:"img-responsive"%>
       </div>
       
-      <div class="col-sm-6 col-md-3">
+      <div class="col-xs-3">
         <%= image_tag ('t-shirt-icon.png'), class:"img-responsive"%>
       </div>
         
-      <div class="col-sm-6 col-md-3">
+      <div class="col-xs-3">
         <%= image_tag ('medal-icon.png'), class:"img-responsive"%>
       </div>
     </div> <!-- ends icons row -->
@@ -110,7 +110,7 @@
         
       <!-- Small modal button -->
       <div class="modal-button">
-        <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">view file</button>
+        <button class="btn btn-sm" id="view-file" data-toggle="modal" data-target=".bs-example-modal-lg">view file</button>
       </div><!-- end Small modal button -->
 
       <!-- Large modal -->
@@ -133,7 +133,9 @@
 
     <hr class="style1">
 
+    <div class="row" id="review-btn">
       <%= link_to 'Review', product_comments_path(@product), class: 'btn btn-sm' %>
+    </div>
     </div>
   
   </div> <!-- row ends -->

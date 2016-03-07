@@ -14,7 +14,7 @@ $(document).on('ready page:load', function(){
 });
 
 
-// ** PREVIOUS JS USED ** //
+// ** PREVIOUS RATY JS USED ** //
 // $(document).on('ready page:load', function(){
 //  $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
 //  $('.rated').raty({ path: '/assets',

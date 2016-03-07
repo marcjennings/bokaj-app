@@ -43,7 +43,7 @@ body.products {
   background-image: 
     linear-gradient(
       rgba(56, 180, 193, 0.5),
-      rgba(1, 1, 1, 0.8)
+      rgba(1, 1, 1, 0.6)
       );
   }
 } 
@@ -59,11 +59,11 @@ body.products {
 
 #race-info {
   text-align: center;
-    margin-top: 50px;
+    // margin-top: 50px;
 }
 
 #races-block {
-  background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
+  background-color: $black-tint; // * Black as rgba. *
   height: 510px;
   width: 360px;
   margin-left: 40px;
@@ -98,6 +98,17 @@ body.products {
   padding: 6px 10px;
 }
 
+.stripe-button {
+  font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  background-color: none;
+  border-radius: 0;
+  color: white;
+  border: 4px double white;
+  background: none; 
+  padding: 6px 20px;
+}
+
 .btn.btn-sm:hover {
   background-color: none;
   color: rgb(56, 180, 193);
@@ -108,6 +119,15 @@ body.products {
 #back-btn {
   margin-top: 10px;
 }
+
+#review-btn {
+  margin-top: 30px;
+}
+
+#view-file {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 // * end races page buttons *//
 
 #other-reviews {
@@ -116,44 +136,44 @@ body.products {
 
 // * Product edit //
 #product_name {
-  color: #38b4c1;
+  color: $blue-main;
 }
 
 #product_market_name {
-  color: #38b4c1;
+  color: $blue-main;
 }
 
 #product_description{
-  color: #38b4c1;
+  color: $blue-main;
 }
 
 #product_image_url {
-  color: #38b4c1;
+  color: $blue-main;
 }
 
 #product_event_date {
-  color: #38b4c1;
+  color: $blue-main;
 }
 
 #product_fee {
-  color: #38b4c1;
+  color: $blue-main;
 }
 // end Product edit// 
 
 
 // horizontal rules and register button //
 hr.style1 {
-  border-color: #38b4c1;
+  border-color: $blue-main;
   margin: 05px;
 }
 
 hr.style2 {
-  border-top: 10px double #38b4c1;
+  border-top: 10px double $blue-main;
   width: 100%;
 }
 
 hr.style3 {
-  border-top: 05px double #38b4c1;
+  border-top: 05px double $blue-main;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -166,15 +186,15 @@ hr.style3 {
  }
 
  #map.water{
-  color: #38b4c1;
+  color: $blue-main;
  }
 
  // end Google map//
 
  // Race modal //
  #race-route {
-    height: 500px;
-    width: 100%;
-    padding: 10px;
+  height: 500px;
+  width: 100%;
+  padding: 10px;
 }
  // end Race modal //
