@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" id="user-comment">
   <p id="p01-time">
 		<%= comment.user.first_name %>  <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
     <% if signed_in? && current_user.admin? %>
@@ -7,7 +7,7 @@
 
   </p>
     <div class="rated" data-score="<%= comment.rating %>"></div>
-  <p id="p01-white"><%= comment.body %></p>
+  <p id="p01-comment"><%= comment.body %></p>
   
   <hr>
   

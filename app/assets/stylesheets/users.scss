@@ -71,6 +71,10 @@ body.user_registrations.create {  //had been changed to body only for image but 
 //   margin-bottom: 0;
 // }
 
+#login {
+  padding: 0px;
+}
+
 #log-in-row {
   // text-align: center;
   margin: 0 auto;
@@ -87,6 +91,10 @@ body.user_registrations.create {  //had been changed to body only for image but 
   display: inline-block;
   float: none;
   vertical-align: top;
+}
+
+#registrations-new {
+  padding: 0px;
 }
 
  .actions {

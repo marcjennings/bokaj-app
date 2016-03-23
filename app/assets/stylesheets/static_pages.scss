@@ -340,6 +340,11 @@ hr.style5 {
 // * ends Home page //
 
 // Login page.
+
+
+
+
+
 // body.static_pages.login {
 //   background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
 //   background-blend-mode: multiply;
@@ -425,6 +430,10 @@ body.static_pages.about {
   margin-bottom: 0;
 }
 
+#about {
+  padding: 0px;
+}
+
 #about h4{
   color: $white-tint;
   margin: 0 auto;
@@ -450,6 +459,10 @@ body.static_pages.contact {
   height: 100%;
   background-size: cover;
   margin-bottom: 0;
+}
+
+#contact {
+  padding: 0px;
 }
 
 #contact-info {
