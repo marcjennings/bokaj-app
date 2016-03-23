@@ -1,7 +1,7 @@
 <div class="container-fluid" id="contact">
-  <div class="row" id="contact-info">
-    <div class="col-xs-12 col-md-4 col-md-offset-4" id="info-black">
-      <h1>Contact Us</h1>
+  <div class="col-xs-12 col-md-4 col-md-offset-4" id="my-center-block">
+    <div class="col-xs-12" id="my-inner-block">
+      <h4>Contact us</h4>
       <hr>
       <% flash[:notice] %>
       <%= form_tag("/static_pages/thank_you") do %>
@@ -9,29 +9,43 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="form-group" id="contact-form">
-            <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+            <p id="p06">Enter Name</p>
+            <%= text_field_tag :name, nil, class: "form-control"%>
           </div> <!-- end form-group -->
 
           <div class="form-group">
-           <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+            <p id="p06">Enter Email</p>
+           <%= text_field_tag :email, nil, class: "form-control"%>
           </div> <!-- end form-group -->
 
           <div class="form-group">
-           <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+            <p id="p06">Enter Your Message</p>
+           <%= text_area_tag :message, nil, class: "form-control"%>
           </div> <!-- end form-group -->
-        
         </div> <!-- end col -->
       </div> <!-- end row -->
+       
+       
       
-      <%= submit_tag "Send" %>
+      <%= submit_tag "Send", class: 'btn btn-sm' %>
+      
       <% end %>
-    </div> <!-- end contact-black -->
-  </div> <!-- end contact-info -->
+      <hr>
 
-  <div class="center-block text-center" id="contact-back-btn">
-    <div class="row">
-      <%= link_to 'Back', races_path, class: 'btn btn-sm'%>
-    </div> <!-- row ends -->
-  </div>
+      
+        <div class="row" id="back-btn-sm">
+          <div class="col-xs-9">
+            <hr class="style2">
+          </div>
+            
+          <div class="col-xs-3">
+            <%= link_to 'Back', races_path, class: 'btn btn-sm'%>
+          </div>
+        </div> <!-- end row -->
+    
+
+    </div> <!-- end my-inner-block -->
+    
+   </div> <!-- end my-center-block -->
 
 </div> <!-- end contact -->

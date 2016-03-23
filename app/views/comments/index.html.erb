@@ -1,43 +1,43 @@
-<div class="container-fluid" id="reviews">
+<div class="container-fluid">
   <div class="row" id="image-review">
   
-  <div class="col-xs-12 col-md-4" id="left-block">
-    <div class="row">
-      <div class="col-xs-12 col-md-8 col-md-offset-4" id="race-date">
-        <p id="p04">
-        <%= image_tag @product.image_url, class:"img-responsive" %>
-        </p>
-        <hr>
-        <p id="p01-white">
-        <strong><%= @product.event_date.strftime("%d.%m.%y") %></strong>
-      </p>
-      </div> <!-- end race-date -->
-    </div> <!-- end row -->
-    
-    <div class="row">
-      <div class="col-sm-12" id="h-rules">
-        <hr class="style2">
+    <div class="col-xs-12 col-md-4" id="left-block">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-4" id="race-date">
+          <p id="p04">
+          <%= image_tag @product.image_url, class:"img-responsive" %>
+          </p>
+          <hr>
+          <p id="p01-white">
+            <strong><%= @product.event_date.strftime("%d.%m.%y") %></strong>
+          </p>
+        </div> <!-- end race-date -->
+      </div> <!-- end row -->
+      
+      <div class="row">
+        <div class="col-sm-12" id="h-rules">
+          <hr class="style2">
+        </div>
       </div>
-    </div>
-  </div> <!--ends left-block -->
+    </div> <!--ends left-block -->
 
     <div class="col-xs-12 col-md-8" id="right-block">
       <div class="row" id="review-comment">
         
-      <div class="col-xs-12 col-md-6" id="other-review">
-        <p id="p04">
-          <%= render partial: "comments" %>
-        </p>
-      </div> <!-- end other-review -->
-         
+        <div class="col-xs-12 col-md-6" id="other-review">
+          <p id="p04">
+            <%= render partial: "comments" %>
+          </p>
+        </div> <!-- end other-review -->
+           
          <!-- comments and rating -->
-         <div class="col-xs-12 col-md-6" id="user-review">
+        <div class="col-xs-12 col-md-6" id="user-review">
           <%= render partial: "new_comment" %>
-          <!-- ends comments and rating -->
         </div> <!-- end user-review -->
+        <!-- ends comments and rating -->
 
-    </div> <!-- end row review-comment -->
+      </div> <!-- end row review-comment -->
     </div>	<!-- end right-block -->
 	
- </div> <!-- ends row -->
-</div> <!-- ends review -->
+  </div> <!-- ends row image-review -->
+</div> <!-- ends container-fluid -->

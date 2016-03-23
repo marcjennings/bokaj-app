@@ -1,6 +1,35 @@
-// Index page.
+// Pictures.
+$picture1: image-url('run1.jpg');
+$picture2: image-url('road1.jpg');
+// ends Pictures
+
+// Colours and colour tints.
+$black-main: #1b1b1f;
+$blue-main: #38b4c1;
+
+$black-tint: rgba(1, 1, 1, 0.6);
+$blue-tint: rgba(56, 180, 193, 0.9);
+
+$black-tint1: rgba(1, 1, 1, 0.5);
+$blue-tint1: rgba(56, 180, 193, 0.7);
+
+$white-tint: rgba(255, 255, 255, 0.7);
+$white-tint1: rgba(255, 255, 255, 0.5);
+// ends Colours and colour tints.
+
+// Fonts.
+$header: font-family(Justus Pro);
+
+// p#p06 {
+//   font-size: 1em;
+//   font-weight: 500;
+//   color: $blue-main;
+// }
+// ends fonts
+
 body.sessions.new {  //had been changed to body only for image but didnt work//
-  background-image: image-url('res-run-road.jpg');
+  background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
+  background-blend-mode: multiply;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -8,20 +37,44 @@ body.sessions.new {  //had been changed to body only for image but didnt work//
   margin-bottom: 0;
 }
 
-#log-in {
-  height: 100%;
-  margin: 0px;
-
-  background-image: 
-    linear-gradient(
-      rgba(56, 180, 193, 0.5),
-      rgba(1, 1, 1, 0.8)
-      );
+body.user_registrations.new {  //had been changed to body only for image but didnt work//
+  background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
+  background-blend-mode: multiply;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 0;
 }
 
+body.user_registrations.create {  //had been changed to body only for image but didnt work//
+  background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
+  background-blend-mode: multiply;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+// // Horizontal Rules. Testing this out as a style for now.
+// $hr1: 10px, #fff, width: 100%, margin-top: 10px;
+// // ends Horizontal Rules
+
+// Index page/log in page
+// body.sessions.new {  //had been changed to body only for image but didnt work//
+//   background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
+//   background-blend-mode: multiply;
+//   width: 100%;
+//   height: 100vh;
+//   background-size: cover;
+//   margin-bottom: 0;
+// }
+
 #log-in-row {
-  text-align: center;
-  margin-top: 60px;
+  // text-align: center;
+  margin: 0 auto;
+  // margin-top: 80px;
  }
 
  #log-in-block {
@@ -43,17 +96,37 @@ body.sessions.new {  //had been changed to body only for image but didnt work//
 
  #user_email {
   border: 0;
-  background-color: rgba(1, 1, 1, 0.6);
+  background-color: $blue-main;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 30px;
  }
 
 #user_password {
   border: 0;
-  background-color: rgba(1, 1, 1, 0.6);
+  background-color: $blue-main;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 30px;
  }
 
- .field label{
-  color: #226e77;
-  letter-spacing: 1px;
+#user_password_confirmation {
+  border: 0;
+  background-color: $blue-main;
+  width: 100%;
+  height: 35px;
+  margin-bottom:30px;
+ }
+
+.field {      
+  font-size: 1em;
+  font-weight: 500;
+  color: $blue-main;
+  // margin-bottom: 0px;
+}
+
+ .field em {
+  color: $white-tint;
  }
 
 .field input {
@@ -62,50 +135,68 @@ body.sessions.new {  //had been changed to body only for image but didnt work//
   letter-spacing: 2px;
  }
 
- .devise-links a {
+.devise-links a {
+  font-family: Justus Pro;
+  font-size: 1.5em;
+  font-weight: 400;
  	margin-bottom: 50px;
   color: #38b4c1;
  }
 
-  .devise-links a:hover {
-    text-decoration: none;
-    color: #ffffff;
+.devise-links a:hover {
+  text-decoration: none;
+  color: $white-tint;
  }
 
- body.registrations.new {  //had been changed to body only for image but didnt work//
-  background-image: image-url('res-run-road.jpg');
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  margin-bottom: 0;
+
+#error_explanation h2 {
+  font-family: Justus Pro;
+  font-size: 4em;
+  font-weight: 800;
+  color: $blue-main;
 }
 
-#registrations-new {
-  height: 100%;
-  margin: 0px;
-  background-image: 
-    linear-gradient(
-      rgba(56, 180, 193, 0.5),
-      rgba(1, 1, 1, 0.8)
-      );
-}
+// #registrations-new {
+//   height: 100%;
+//   margin: 0px;
+//   background-image: 
+//     linear-gradient(
+//       rgba(56, 180, 193, 0.5),
+//       rgba(1, 1, 1, 0.8)
+//       );
+// }
 
 #reg-new-row {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 100px;
  }
 
- #reg-new-block {
-  background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
-  height: 350px;
+ #my-center-block {
+  background-color: $black-tint1;
+  height: 100vh;
   width: 400px;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding: 10px;
+  // margin-top: 100px;
+  // margin-left: 40px;
+  // margin-right: 40px;
+  // padding: 10px;
   display: inline-block;
-  float: none;
+  // float: none;
   vertical-align: top;
+}
+
+#my-center-block h4{
+  color: $white-tint;
+  margin: 0 auto;
+  margin-top: 20px;
+  line-height: 1;
+  word-spacing: 0px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+#my-inner-block {
+  margin-top: 90px;
 }
 
 #edit {
@@ -114,7 +205,7 @@ body.sessions.new {  //had been changed to body only for image but didnt work//
 
 #user-index {
   margin-top: 100px;
-  background-color: #38b4c1;
+  background-color: $blue-main;
 }
 
 #user-show {
@@ -123,7 +214,7 @@ body.sessions.new {  //had been changed to body only for image but didnt work//
 
 // Password new page
 #thank-you {
-  background-color: #38b4c1;
+  background-color: $blue-main;
   position: relative;
   width: 100%;
   height: 100vh;

@@ -2,6 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// Pictures.
+$picture1: image-url('run1.jpg');
+$picture2: image-url('road1.jpg');
+// ends Pictures
+
+// Colours and colour tints.
+$black-main: #1b1b1f;
+$blue-main: #38b4c1;
+
+$black-tint: rgba(1, 1, 1, 0.7);
+$blue-tint: rgba(56, 180, 193, 0.9);
+
+$black-tint1: rgba(1, 1, 1, 0.5);
+$blue-tint1: rgba(56, 180, 193, 0.7);
+// ends Colours and colour tints.
+
 // Fonts.
 h1,
 h2, {
@@ -28,24 +44,25 @@ body.products {
 }
 
   &.show {
-  background-image: image-url('res-run2.jpg');
+  background: $picture1, linear-gradient(to bottom, $blue-tint, $black-tint);  //* linear-gradient(to bottom, $blue-tint, $black-tint) *//
+  background-blend-mode: multiply;
   position: relative;
   width: 100%;
   height: 100vh;
   background-size: cover;
   margin-bottom: 0;
-  } 
+}
 
-  #race {
-  height: 100%;
-  margin: 0px;
-  background-size: cover;
-  background-image: 
-    linear-gradient(
-      rgba(56, 180, 193, 0.5),
-      rgba(1, 1, 1, 0.6)
-      );
-  }
+  // #race {
+  // height: 100%;
+  // margin: 0px;
+  // background-size: cover;
+  // background-image: 
+  //   linear-gradient(
+  //     rgba(56, 180, 193, 0.5),
+  //     rgba(1, 1, 1, 0.6)
+  //     );
+  // }
 } 
 //end body.products
 
@@ -55,24 +72,98 @@ body.products {
 
 #races-all {
   text-align: center;
+  background-color: 0;
  }
 
 #race-info {
   text-align: center;
-    // margin-top: 50px;
+  margin-top: 0px;
+  // background-color: white;
 }
 
+//  #my-races-block {
+//   background-color: $black-tint1;
+//   height: 80vh;
+//   width: 400px;
+//   // margin-top: 100px;
+//   margin-left: 40px;
+//   margin-right: 40px;
+//   padding: 10px;
+//   display: inline-block;
+//   // float: none;
+//   vertical-align: top;
+// }
+
 #races-block {
-  background-color: $black-tint; // * Black as rgba. *
-  height: 510px;
+  background-color: $black-tint1;
+  height: 100%;
   width: 360px;
   margin-left: 40px;
   margin-right: 40px;
-  margin-top: 80px;
+  margin-top: 100px;
+  // margin-bottom: 20px;
   padding: 10px;
   display: inline-block;
   float: none;
   vertical-align: top;
+}
+
+// #my-inner-races-block {
+//   // margin-top: 90px;
+// }
+
+// #my-inner-block {
+//   margin-top: 90px;
+// }
+
+// #product.event_date.strftime{
+//   color: white;
+// }
+
+#races-block h4{
+  color: $white-tint;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 05px;
+  line-height: 1;
+  word-spacing: 0px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+// #races-block h5{
+//   color: $blue-main;
+//   margin: 0 auto;
+//   margin-top: 05px;
+//   line-height: 1;
+//   word-spacing: 0px;
+//   letter-spacing: 1px;
+//   font-weight: bold;
+//   font-size: 2em;
+// }
+
+#date h2 {
+  color: white;
+}
+
+#date-time h2 {
+  height: 30px;
+  margin-top: 05px;
+  margin-bottom: 05px;
+}
+
+#fee-pay {
+  height: 50px;
+  // display: block;
+  margin-top: 05px;
+  margin-bottom: 05px;
+  vertical-align: middle;
+}
+
+#fee h2 {
+  margin-top: 06px;
+ 
 }
 
 #icons {
@@ -80,8 +171,8 @@ body.products {
   display: inline-block;
   float: none;
   vertical-align: center;
-  margin-top: 10px;
-
+  // margin-top: 10px;
+  // margin-bottom: 05px;
 }
 //end body.products
 
@@ -96,17 +187,37 @@ body.products {
   border: 4px double white;
   background: none; 
   padding: 6px 10px;
+  margin-bottom: 10px;
 }
 
-.stripe-button {
+.stripe-button-el {
+  // font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
+  // font-size: 12px;
+  // background-color: none;
+  border-radius: 0;
+  // color: white;
+  // border: 4px double white;
+  background: none; 
+  // padding: 6px 10px;
+}
+
+.stripe-button-el span {
+  background: none; 
   font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   background-color: none;
   border-radius: 0;
+  height: 40px;
   color: white;
   border: 4px double white;
-  background: none; 
-  padding: 6px 20px;
+  
+}
+
+.stripe-button-el span:hover {
+  background-color: none;
+  color: rgb(56, 180, 193);
+  outline-style: white;
+  border: 4px double rgb(56, 180, 193);
 }
 
 .btn.btn-sm:hover {
@@ -125,7 +236,7 @@ body.products {
 }
 
 #view-file {
-  margin-top: 10px;
+  // margin-top: 10px;
   margin-bottom: 30px;
 }
 // * end races page buttons *//
@@ -170,6 +281,8 @@ hr.style1 {
 hr.style2 {
   border-top: 10px double $blue-main;
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 hr.style3 {
@@ -177,12 +290,23 @@ hr.style3 {
   width: 100%;
   margin-bottom: 10px;
 }
+
+hr.style5 {
+  border-top: 10px; 
+  color: white;
+  width: 100%;
+}
+
+#race-info hr {
+  margin-top: 05px;
+  margin-bottom: 10px;
+}
 // end horizontal rules and register button //
 
 // Google map.
 #map {
   width: 100%;
-  height: 250px;
+  height: 181.734px;
  }
 
  #map.water{

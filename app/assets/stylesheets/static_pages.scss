@@ -2,27 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// Pictures.
+$picture1: image-url('run1.jpg');
+$picture2: image-url('road1.jpg');
+$picture3: image-url('water1.jpg');
+$picture4: image-url('run-legs.jpg');
+$picture5: image-url('feet-leaves.jpg');
+$picture6: image-url('water2.jpg');
+$picture7: image-url('water3.jpg');
+$picture8: image-url('leaves1.jpg');
+// ends Pictures
+
 // Colours and colour tints.
-$blue-main: #38b4c1;
 $black-main: #1b1b1f;
-$black-tint: rgba(1, 1, 1, 0.6);
-$blue-tint: rgba(56, 180, 193, 0.5);
+$blue-main: #38b4c1;
+
+$black-tint: rgba(1, 1, 1, 0.7);
+$blue-tint: rgba(56, 180, 193, 0.9);
+
+$black-tint1: rgba(1, 1, 1, 0.5);
+$blue-tint1: rgba(56, 180, 193, 0.7);
+
+$white-tint: rgba(255, 255, 255, 0.7);
+$white-tint1: rgba(255, 255, 255, 0.5);
 // ends Colours and colour tints.
 
-
-// .container {
-//   width: 100%;
-//   margin: 0 auto;
-// }
-
-body {
-  position: relative;
-}
+// Fonts.
+$header: font-family(Justus Pro);
+// ends fonts
 
 // Fonts.
 h1,
 h2, {
-  font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
+  font-family: Azo Sans, Arimo, Futura, Helvetica, Arial, sans-serif;
+}
+
+h4 {
+  font-family: Justus Pro;
 }
 
 h1, h2, h3, p {
@@ -46,7 +62,7 @@ p#p01-white {
 
 p#p02 {
   font-size: 1.2em;
-  line-height: 115%;
+  line-height: 120%;
   color: $blue-main;
 }
 
@@ -67,6 +83,12 @@ p#p05 {
   margin-top: 20px;
 }
 
+p#p06 {
+  font-size: 1em;
+  font-weight: 500;
+  color: $blue-main;
+  margin-bottom: 05px;
+}
 // end Fonts.
 
 // Navbar
@@ -86,7 +108,6 @@ p#p05 {
 
 .navbar-default .navbar-brand  {
   padding-left: 10px;
-
 }
 
 .navbar-brand {
@@ -113,7 +134,401 @@ p#p05 {
 .form-group input {
   background-color: $blue-main;
   color: $black-main;
+  border: 0;
+  height: 35px;
+  margin-right: 10px;
+  font-weight: 600;
 }
+
+// Footer.
+.footer.footer {
+  height: 40px;
+  background-color: $black-main;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  font-size: .8em;
+  color: white;
+  padding-top: 10px;
+  width: 50%;
+  margin-left: 15px;
+  padding-left: 10px;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+// end Footer */
+
+// // Alert and Notice.
+#messages {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#notice {
+  color: $black-main;
+  font-weight: 600;
+}
+
+#notice.alert-info {
+  background-color: $blue-main;
+  border: 0;
+  border-radius: 0;
+  margin-top: 10px;
+}
+// // ends Alert and  Notice */
+
+// Index page.
+body.static_pages {  //had been changed to body only for image but didnt work//
+  background: $picture1, linear-gradient(to bottom, $blue-tint, $black-tint); // *
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+// #index {
+//   height: 100%;
+//   margin: 0px;
+//   background-image: 
+//     linear-gradient(
+//       $blue-tint,
+//       $black-tint
+//       );
+// }
+
+// ** Unused CSS, remove when finalised ** //
+
+// hr.style2 {
+//   border-top: 10px double #38b4c1;
+//   width: 100%;
+// }
+
+// .btn.btn-default {
+//   background-color: none;
+//   border-radius: 0;
+//   border-style: white;
+//   color: black;
+//   font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
+//   text-decoration: none;
+// }
+
+// .btn.btn-default:hover {
+//   background-color: none;
+//   color: white;
+//   outline-style: white
+// }
+
+// .btn.btn-default:active {
+//   background-color: #1b1b1f;
+//   border: #1b1b1f;
+// }
+
+// .col-center-block {
+//     float: none;
+//     display: block;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+// ** end Unused CSS, remove when finalised ** //
+// ends Index page.
+
+// * Home page //
+// #home {
+//   height: 100%;
+//   margin: 0px;
+//   background-image: 
+//     linear-gradient(
+//       $blue-tint,
+//       $black-tint
+//       );
+// }
+
+#resrunlogo { 
+  margin-top: 40px;
+ }
+
+#intro {
+  margin-top: 80px;
+}
+
+#intro h4 {
+  color: $white-tint;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  line-height: 1;
+  word-spacing: 0px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 6em;
+}
+
+#intro h3 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2.5em;
+  font-weight: 200;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+
+}
+
+#date h2 {
+  color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#enter-race { 
+  margin-top: 10px;
+}
+
+hr.style2 {
+  border-top: 10px double $blue-main;
+  width: 100%;
+}
+
+hr.style4 {
+  border-top: 10px double $black-tint1;
+  width: 100%;
+}
+
+hr.style5 {
+  border-top: 10px; 
+  color: white;
+  width: 100%;
+}
+
+.btn.btn-lg {
+  font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
+  background-color: none;
+  border-radius: 0;
+  color: white;
+  border: 4px double white;
+  background: none; 
+  padding: 12px 60px;  
+}
+
+.btn.btn-lg:hover {
+  background-color: none;
+  color: rgb(56, 180, 193);
+  outline-style: white;
+  border: 4px double rgb(56, 180, 193);
+
+}
+
+// body.static_pages.home {  //had been changed to body only for image but didnt work//
+//   background: $picture1, linear-gradient(to bottom, $blue-tint, $black-tint);
+//   background-blend-mode: multiply;
+//   position: relative;
+//   width: 100%;
+//   height: 100vh;
+//   background-size: cover;
+//   margin-bottom: 0;
+//   margin-top: 50px;
+// }
+// * ends Home page //
+
+// Login page.
+// body.static_pages.login {
+//   background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
+//   background-blend-mode: multiply;
+//   position: relative;
+//   width: 100%;
+//   height: 100vh;
+//   background-size: cover;
+//   margin-bottom: 0;
+//   // margin-top: 50px;
+// }
+
+// #login-black {
+//   background-color: rgba(56, 180, 193, 0.6); // * Black as rgba. *
+//   height: 50px;
+//   width: 500px;
+//   margin-top: 300px;
+// }
+
+// #login-black:hover {
+//   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
+//   height: 50px;
+//   width: 500px;
+//   margin-top: 300px;
+// }
+
+// #login-back-btn {
+//   margin-top: 20px;
+// }
+// ends Login page.
+
+// Forgot Your Password.
+#forgot-password {
+  background-color: $blue-main;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+#forgot-password  h4 {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 6em;
+}
+
+#forgot-password label {
+  color: white;
+  font-weight: 400;
+}
+
+#forgot-password input#user_email {
+  background-color: $black-tint;
+  padding: 10px;
+  width: 70%;
+}
+
+#forgot-password input:focus {
+  outline: none;
+}
+
+#forgot-password input.btn.btn-sm:hover {
+  color: $black-tint;
+  background-color: none;
+  outline-style: $black-tint;
+  border: 4px double $black-tint;
+}
+// ends Forgot Your Password
+
+// About page.
+body.static_pages.about {
+  background: $picture7, linear-gradient(to bottom, $blue-tint, $black-tint);
+  background-blend-mode: multiply;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+#about h4{
+  color: $white-tint;
+  margin: 0 auto;
+  margin-top: 20px;
+  line-height: 1;
+  word-spacing: 0px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#about-back-btn {
+  margin-top: 100px;
+}
+// ends About page.
+
+// Contact page.
+body.static_pages.contact {
+  background: $picture8, linear-gradient(to bottom, $blue-tint, $black-tint);
+  background-blend-mode: multiply;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+#contact-info {
+  margin: 0 auto;
+  margin-top: 80px;
+  height: 90%;
+}
+
+// #info-black {
+//   background-color: $black-tint; 
+//   height: 100%;
+// }
+
+#contact-back-btn {
+  margin-top: 100px;
+}
+
+// contact form.
+#name.form-control {
+  background-color: $blue-main;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
+#email.form-control {
+  background-color: $blue-main;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
+#message.form-control {
+  background-color: $blue-main;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+ .field em {
+  color: $white-tint1;
+ }
+
+.btn.btn-sm {
+  font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  background-color: none;
+  border-radius: 0;
+  color: white;
+  border: 4px double white;
+  background: none; 
+  padding: 6px 10px;
+  margin-bottom: 10px;
+}
+
+ // end contact form.
+
+ // Thank You page.
+#thank-you {
+  background-color: $blue-main;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+#thank-you h4 {
+  color: $white-tint;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 6em;
+}
+// end Thank You page.
+
 // ends Navbar.
 
 // Expanding Search Bar
@@ -233,330 +648,27 @@ p#p05 {
 // }
 // ends Expanding Search Bar
 
-// Footer.
-.footer.footer {
-  height: 40px;
-  background-color: $black-main;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-
-}
-
-.footer p {
-  font-size: .8em;
-  color: white;
-  padding-top: 10px;
-  width: 50%;
-  margin-left: 15px;
-  padding-left: 10px;
-  display: inline-block;
-  letter-spacing: 0.1em;
-  text-align: left;
-}
-// end Footer */
-
-// // Alert and Notice.
-#messages {
-  margin-top: 10px;
-  text-align: center;
-}
-
-#notice {
-  color: $black-main;
-  font-weight: 600;
-}
-
-#notice.alert-info {
-  background-color: $blue-main;
-  border: 0;
-  border-radius: 0;
-  margin-top: 10px;
-}
-// // ends Alert and  Notice */
-
-// Index page.
-body.static_pages.index {  //had been changed to body only for image but didnt work//
-  background-image: image-url('res-run2.jpg');
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  margin-bottom: 0;
-
-}
-
-#index {
-  height: 100%;
-  margin: 0px; 
-  background-image: 
-    linear-gradient(
-      $blue-tint,
-      $black-tint
-      );
-}
-
 // ** Unused CSS, remove when finalised ** //
 
-// hr.style2 {
-//   border-top: 10px double #38b4c1;
-//   width: 100%;
+// #login {
+//   height: 100%;
+//   margin: 0px; 
+//   background-image: 
+//     linear-gradient(
+//       $blue-tint,
+//       $black-tint
+//       );
 // }
 
-// .btn.btn-default {
-//   background-color: none;
-//   border-radius: 0;
-//   border-style: white;
-//   color: black;
-//   font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
-//   text-decoration: none;
+// #contact {
+//   height: 100%;
+//   margin: 0px; 
+//   background-image: 
+//     linear-gradient(
+//       $blue-tint,
+//       $black-tint
+//       );
 // }
-
-// .btn.btn-default:hover {
-//   background-color: none;
-//   color: white;
-//   outline-style: white
-// }
-
-// .btn.btn-default:active {
-//   background-color: #1b1b1f;
-//   border: #1b1b1f;
-// }
-
-// .col-center-block {
-//     float: none;
-//     display: block;
-//     margin-left: auto;
-//     margin-right: auto;
-// }
-
-// ** end Unused CSS, remove when finalised ** //
-// ends Index page.
-
-// * Home page //
-#home {
-  height: 100%;
-  margin: 0px; 
-  background-image: 
-    linear-gradient(
-      $blue-tint,
-      $black-tint
-      );
-}
-
-#resrunlogo { 
-  margin-top: 40px;
- 
-}
-
-#intro {
-  margin-top: 110px;
-}
-
-#intro h2 {
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0 auto;
-  margin-top: 50px;
-  text-align: center;
-  line-height: 1;
-  word-spacing: 0px;
-  font-weight: normal;
-  font-size: 5em;
-}
-
-#intro h3 {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 2.5em;
-  font-weight: 200;
-  margin: 0 auto;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  text-align: center;
-
-}
-
-#date h2 {
-  color: white;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-#enter-race { 
-  margin-top: 10px;
-}
-
-hr.style2 {
-  border-top: 10px double $blue-main;
-  width: 100%;
-}
-
-.btn.btn-lg {
-  font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
-  background-color: none;
-  border-radius: 0;
-  color: white;
-  border: 4px double white;
-  background: none; 
-  padding: 12px 60px;  
-}
-
-.btn.btn-lg:hover {
-  background-color: none;
-  color: rgb(56, 180, 193);
-  outline-style: white;
-  border: 4px double rgb(56, 180, 193);
-
-}
-
-body.static_pages.home {  //had been changed to body only for image but didnt work//
-  background-image: image-url('res-run2.jpg');
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  margin-bottom: 0;
-  margin-top: 50px;
-}
-// * ends Home page //
-
-// Login page.
-body.static_pages.login {
-  background-image: image-url('res-run2.jpg');
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  margin-bottom: 0;
-  margin-top: 50px;
-}
-
-#login {
-  height: 100%;
-  margin: 0px; 
-  background-image: 
-    linear-gradient(
-      $blue-tint,
-      $black-tint
-      );
-}
-
-#login-black {
-  background-color: rgba(56, 180, 193, 0.6); // * Black as rgba. *
-  height: 50px;
-  width: 500px;
-  margin-top: 300px;
-}
-
-#login-black:hover {
-  background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
-  height: 50px;
-  width: 500px;
-  margin-top: 300px;
-}
-
-#login-back-btn {
-  margin-top: 20px;
-}
-// ends Login page.
-
-// About page.
-body.static_pages.about {
-  background-image: image-url('res-run2.jpg');
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  margin-bottom: 0;
-
-}
-
-#about {
-  height: 100%;
-  margin: 0px; 
-  background-image: 
-    linear-gradient(
-      $blue-tint,
-      $black-tint
-      );
-  }
-
-#about-info {
-  margin: 0 auto;
-  margin-top: 80px;
- 
-}
-
-#about-back-btn {
-  margin-top: 100px;
-}
-
-// ** Unused CSS, remove when finalised ** //
-
-// #about-blue {
-//   background-color: rgba(56, 180, 193, 0.6); // * Blue as rgba. *
-//   height: 294px;
-// }
-
-// ** ends Unused CSS, remove when finalised ** //
-
-// ends About page.
-
-// Contact page.
-body.static_pages.contact {
-  background-image: image-url('res-run2.jpg');
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  margin-bottom: 0;
-}
-
-#contact {
-  height: 100%;
-  margin: 0px; 
-  background-image: 
-    linear-gradient(
-      $blue-tint,
-      $black-tint
-      );
-}
-
-#contact-info {
-  margin: 0 auto;
-  margin-top: 80px;
-}
-
-#info-black {
-  background-color: $black-tint; 
-  height: 300px;
-}
-
-#contact-back-btn {
-  margin-top: 100px;
-}
-
-// contact form.
-#name.form-control {
-  background-color: $black-tint;
-  border: none;
-  border-radius: 0;
-}
-
-#email.form-control {
-  background-color: $black-tint;
-  border: none;
-  border-radius: 0;
-}
-
-#message.form-control {
-  background-color: $black-tint;
-  border: none;
-  border-radius: 0;
-}
-
-// ** Unused CSS, remove when finalised ** //
 
 // #contact-blue {
 //   background-color: rgba(56, 180, 193, 0.6); // * Blue as rgba. *
@@ -591,34 +703,10 @@ body.static_pages.contact {
 //   margin-top: 100px;
 // }
 
-// ** end Unused CSS, remove when finalised ** //
-
-// end contact form.
-
-
-// Thank You page.
-#thank-you {
-  background-color: $blue-main;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  margin-bottom: 0;
-  margin-top: 50px;
-}
-
-#thank-you h2 {
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0 auto;
-  margin-top: 200px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-weight: normal;
-  font-size: 5em;
-}
-// end Thank You page.
-
-// ends Contact page.
+// #about-blue {
+//   background-color: rgba(56, 180, 193, 0.6); // * Blue as rgba. *
+//   height: 294px;
+// }
 
 // colour blocks.
 // #black {
@@ -637,4 +725,37 @@ body.static_pages.contact {
 //   margin: 05px;
 // }
 // ends colour blocks.
+
+//  old Login page.
+// body.static_pages.login {
+//   background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
+//   background-blend-mode: multiply;
+//   position: relative;
+//   width: 100%;
+//   height: 100vh;
+//   background-size: cover;
+//   margin-bottom: 0;
+//   // margin-top: 50px;
+// }
+
+// #login-black {
+//   background-color: rgba(56, 180, 193, 0.6); // * Black as rgba. *
+//   height: 50px;
+//   width: 500px;
+//   margin-top: 300px;
+// }
+
+// #login-black:hover {
+//   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
+//   height: 50px;
+//   width: 500px;
+//   margin-top: 300px;
+// }
+
+// #login-back-btn {
+//   margin-top: 20px;
+// }
+// ends old Login page.
+
+// ** end Unused CSS, remove when finalised ** //
 

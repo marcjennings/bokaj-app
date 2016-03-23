@@ -1,9 +1,9 @@
 var app = angular.module('shop', ['ngResource']);
 
-
-$(document).on('ready page:load', function() {
-	angular.bootstrap(document.body, ['shop'])
-});
+//* when left in angularjs error
+// $(document).on('ready page:load', function() {   
+// 	angular.bootstrap(document.body, ['shop'])
+// });
 
 app.factory('models', [ '$resource', function($resource){
   var orders_model = $resource("/orders/:id.json", {id: "@id"});
