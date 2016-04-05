@@ -7,7 +7,7 @@ is not best practice and not the DRY principle.
 
 Some of the commented out CSS and HTML is also being left in (for now) as a reference, 
 I could/should use github for this but for now i'd like a quick visual reference as it's
-a project I will may come back to to test ideas out.
+a project I will come back to to test ideas on.
 
 
 Things you may want to cover:

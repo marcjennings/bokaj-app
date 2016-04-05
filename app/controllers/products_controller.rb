@@ -18,11 +18,6 @@ class ProductsController < ApplicationController
   #    @products = Products.limit(3)
   # end
 
-  def review
-    
-  end
-
-
   # GET /products/1
   # GET /products/1.json
   def show

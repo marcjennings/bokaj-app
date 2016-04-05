@@ -8,10 +8,9 @@
       <!-- <hr> -->
       
       <% cache @product do %>
-      <!-- <p>
-        <strong><%= @product.market_name %></strong>
+<!--  <p>
+        <%= @product.market_name %>
       </p> -->
-      
       <% end %>
 
       <h4>
@@ -127,9 +126,8 @@
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSgdzLZ0J0bdxnpJ2KXMNR6U5ng6F4mh0&callback=initMap"
           async defer>
           </script>
-      
-      <!--     <div class="row"> -->
-          <h4>Race info and Routes</h4>
+        
+        <h4><%= @product.market_name %> info</h4>
 
           <hr>
 
