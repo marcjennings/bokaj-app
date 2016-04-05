@@ -1,6 +1,6 @@
 <div class="container" id="forgot-password">
   <div class="row">
-    <div class="col-sm-12 col-md-10 col-md-offset-1">
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
       <h4>Forgot your <br> password?</h4>
         <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
         <%= devise_error_messages! %>
@@ -8,10 +8,10 @@
   </div>
 
   <div class="row row-centered text-center">  
-   <div class="col-sm-12 col-md-4 col-md-offset-4">
+    <div class="col-xs-12 col-md-4 col-md-offset-4">
       <div class="field">
         <p id="p01-white"><%= f.label :email %><br /></p>
-        <%= f.email_field :email, autofocus: true %>
+          <%= f.email_field :email, autofocus: true %>
       </div>
 
     <div class="actions">
@@ -23,5 +23,4 @@
 
     </div>
   </div> 
-
 </div> <!-- end container -->

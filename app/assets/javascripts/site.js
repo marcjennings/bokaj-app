@@ -1,3 +1,12 @@
+$(document).on('ready page:load', function(){ 
+  apply_raty();
+
+  $( "#alerts" ).delay(500).fadeIn( 'normal', function() {
+    $(this).delay(1000).fadeOut();
+    // Animation complete.
+  });
+});
+
 var apply_raty = function() 
 	{ $('.rating').raty({ path:'/assets', scoreName: 'comment[rating]'}); 
 	$('.rated').raty({ path: '/assets', 
@@ -7,12 +16,6 @@ var apply_raty = function()
     } 
   }); 
 };
-
-$(document).on('ready page:load', function(){ 
-  apply_raty();
-
-});
-
 
 // ** PREVIOUS RATY JS USED ** //
 // $(document).on('ready page:load', function(){
@@ -24,3 +27,7 @@ $(document).on('ready page:load', function(){
 //    }
 //  });
 // });
+
+ // $( "#alerts" ).fadeOut( 3000, function() {
+ //    // Animation complete.
+ //  });

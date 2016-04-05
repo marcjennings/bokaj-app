@@ -1,4 +1,4 @@
-// Pictures.
+// Pictures. 
 $picture1: image-url('run1.jpg');
 $picture2: image-url('road1.jpg');
 // ends Pictures
@@ -37,7 +37,7 @@ body.sessions.new {  //had been changed to body only for image but didnt work//
   margin-bottom: 0;
 }
 
-body.user_registrations.new {  //had been changed to body only for image but didnt work//
+body.user_registrations.new {  
   background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
   background-blend-mode: multiply;
   position: relative;
@@ -47,7 +47,7 @@ body.user_registrations.new {  //had been changed to body only for image but did
   margin-bottom: 0;
 }
 
-body.user_registrations.create {  //had been changed to body only for image but didnt work//
+body.user_registrations.create {  
   background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
   background-blend-mode: multiply;
   position: relative;
@@ -60,38 +60,6 @@ body.user_registrations.create {  //had been changed to body only for image but 
 // // Horizontal Rules. Testing this out as a style for now.
 // $hr1: 10px, #fff, width: 100%, margin-top: 10px;
 // // ends Horizontal Rules
-
-// Index page/log in page
-// body.sessions.new {  //had been changed to body only for image but didnt work//
-//   background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
-//   background-blend-mode: multiply;
-//   width: 100%;
-//   height: 100vh;
-//   background-size: cover;
-//   margin-bottom: 0;
-// }
-
-#login {
-  padding: 0px;
-}
-
-#log-in-row {
-  // text-align: center;
-  margin: 0 auto;
-  // margin-top: 80px;
- }
-
- #log-in-block {
-  background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
-  height: 350px;
-  width: 400px;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding: 10px;
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
 
 #registrations-new {
   padding: 0px;
@@ -110,6 +78,18 @@ body.user_registrations.create {  //had been changed to body only for image but 
   margin-bottom: 30px;
  }
 
+input:focus {
+  outline: none;
+}
+
+//* removes yellow autofill in Chrome ---------- */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px $blue-main inset;
+  -moz-box-shadow: 0 0 0 100px $blue-main inset;
+  box-shadow: 0 0 0 100px $blue-main inset;
+}
+// * ends removes yellow autofill in Chrome ---------- */
+
 #user_password {
   border: 0;
   background-color: $blue-main;
@@ -123,13 +103,13 @@ body.user_registrations.create {  //had been changed to body only for image but 
   background-color: $blue-main;
   width: 100%;
   height: 35px;
-  margin-bottom:30px;
+  margin-bottom: 30px;
  }
 
-.field {      
+.field { 
+  color: $blue-main;    
   font-size: 1em;
   font-weight: 500;
-  color: $blue-main;
   // margin-bottom: 0px;
 }
 
@@ -138,9 +118,10 @@ body.user_registrations.create {  //had been changed to body only for image but 
  }
 
 .field input {
-  color: #ffffff;
+  color: $black-main;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  padding: 10px;
  }
 
 .devise-links a {
@@ -148,7 +129,7 @@ body.user_registrations.create {  //had been changed to body only for image but 
   font-size: 1.5em;
   font-weight: 400;
  	margin-bottom: 50px;
-  color: #38b4c1;
+  color: $blue-main;
  }
 
 .devise-links a:hover {
@@ -164,48 +145,38 @@ body.user_registrations.create {  //had been changed to body only for image but 
   color: $blue-main;
 }
 
-// #registrations-new {
-//   height: 100%;
-//   margin: 0px;
-//   background-image: 
-//     linear-gradient(
-//       rgba(56, 180, 193, 0.5),
-//       rgba(1, 1, 1, 0.8)
-//       );
-// }
-
 #reg-new-row {
   text-align: center;
   margin-top: 100px;
  }
 
- #my-center-block {
-  background-color: $black-tint1;
-  height: 100vh;
-  width: 400px;
-  // margin-top: 100px;
-  // margin-left: 40px;
-  // margin-right: 40px;
-  // padding: 10px;
-  display: inline-block;
-  // float: none;
-  vertical-align: top;
-}
+//  #my-center-block {
+//   background-color: $black-tint1;
+//   height: 100vh;
+//   width: 400px;
+//   // margin-top: 100px;
+//   // margin-left: 40px;
+//   // margin-right: 40px;
+//   // padding: 10px;
+//   display: inline-block;
+//   // float: none;
+//   vertical-align: top;
+// }
 
-#my-center-block h4{
-  color: $white-tint;
-  margin: 0 auto;
-  margin-top: 20px;
-  line-height: 1;
-  word-spacing: 0px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  font-size: 4em;
-}
+// #my-center-block h4{
+//   color: $white-tint;
+//   margin: 0 auto;
+//   margin-top: 20px;
+//   line-height: 1;
+//   word-spacing: 0px;
+//   letter-spacing: 2px;
+//   font-weight: bold;
+//   font-size: 4em;
+// }
 
-#my-inner-block {
-  margin-top: 90px;
-}
+// #my-inner-block {
+//   margin-top: 90px;
+// }
 
 #edit {
   margin-top: 100px;
@@ -221,7 +192,18 @@ body.user_registrations.create {  //had been changed to body only for image but 
 }
 
 // Password new page
-#thank-you {
+// #thank-you {
+//   background-color: green;
+//   position: relative;
+//   width: 100%;
+//   height: 100vh;
+//   background-size: cover;
+//   margin-bottom: 0;
+//   margin-top: 50px;
+// }
+
+// Forgot Your Password.
+#forgot-password {
   background-color: $blue-main;
   position: relative;
   width: 100%;
@@ -229,6 +211,94 @@ body.user_registrations.create {  //had been changed to body only for image but 
   background-size: cover;
   margin-bottom: 0;
   margin-top: 50px;
+}
+
+#forgot-password  h4 {
+  color: $white-tint;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 6em;
+}
+
+#forgot-password label {
+  color: white;
+  font-weight: 400;
+}
+
+#forgot-password input#user_email {
+  background-color: $black-tint;
+  padding: 10px;
+  width: 70%;
+}
+
+#forgot-password input:focus {
+  outline: none;
+}
+
+#forgot-password input.btn.btn-sm:hover {
+  color: $black-tint;
+  background-color: none;
+  outline-style: $black-tint;
+  border: 4px double $black-tint;
+}
+// ends Forgot Your Password
+
+/* Media Queries ------------------ */
+
+@media (max-width: 414px) {
+  #forgot-password  h4 {
+    font-size: 4em;
+    margin-top: 100px;
+  }
+
+#forgot-password input#user_email {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  #forgot-password  h4 {
+    font-size: 3em;
+    margin-top: 100px;
+  }
+
+  #name.form-control {
+    margin-bottom: 10px;
+  }
+
+  #email.form-control {
+    margin-bottom: 10px;
+  }
+
+ #user_email {
+    margin-bottom: 10px;
+  }
+
+ #user_password {
+    margin-bottom: 10px;
+  }
+
+  #user_password_confirmation {
+    margin-bottom: 15px;
+  }
+
+  #new_user label {
+    margin-bottom: 5px;
+  }
+
+  .actions {
+    margin-bottom: 5px;
+  }
+
+  #error_explanation h2 {
+    font-size: 3em;
+    margin-top: 2px;
+  }
 }
 
 // * end Password new page

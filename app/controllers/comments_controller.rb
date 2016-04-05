@@ -28,18 +28,12 @@ class CommentsController < ApplicationController
     #@comments =  Comment.where(product_id: @product.id).order(“id desc”)
     @comments = @product.comments.order("id desc").paginate(per_page: 3, page: params[:page])
     @comment = Comment.new(product: @product)
-   
-
-
   end  
-
-
 
   private
 
   def comment_params
     params.require(:comment).permit(:user_id, :body, :rating)
   end
-
 
 end

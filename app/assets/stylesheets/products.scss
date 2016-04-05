@@ -53,6 +53,12 @@ body.products {
   margin-bottom: 0;
 }
 
+@media (max-width: 414px) {
+  &.show {
+    background: $blue-tint;
+  }
+}
+
   // #race {
   // height: 100%;
   // margin: 0px;
@@ -73,11 +79,13 @@ body.products {
 #races-all {
   text-align: center;
   background-color: 0;
+  margin-top: 100px;
+  margin-bottom: 60px;
  }
 
 #race-info {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 100px;
   // background-color: white;
 }
 
@@ -96,16 +104,33 @@ body.products {
 
 #races-block {
   background-color: $black-tint1;
-  height: 100%;
+  height: 540px;
   width: 360px;
   margin-left: 40px;
   margin-right: 40px;
-  margin-top: 100px;
-  // margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 10px;
   display: inline-block;
   float: none;
   vertical-align: top;
+}
+
+
+@media (max-width: 414px) {
+  #races-block {
+    width: 90%;
+    height: 100%;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #race-info {
+    text-align: center;
+    // height: 100%;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
 }
 
 // #my-inner-races-block {
@@ -130,6 +155,20 @@ body.products {
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 2em;
+}
+
+@media (max-width: 414px) {
+  #races-block h4{
+    color: $white-tint;
+    margin: 0 auto;
+    margin-top: 05px;
+    margin-bottom: 05px;
+    line-height: 1;
+    word-spacing: 0px;
+    letter-spacing: 0.6px;
+    font-weight: bold;
+    font-size: 1.6em;
+  }
 }
 
 // #races-block h5{
@@ -232,7 +271,7 @@ body.products {
 }
 
 #review-btn {
-  margin-top: 30px;
+  margin-top: 46px;
 }
 
 #view-file {
@@ -307,6 +346,7 @@ hr.style5 {
 #map {
   width: 100%;
   height: 181.734px;
+  margin-top: 5px;
  }
 
  #map.water{

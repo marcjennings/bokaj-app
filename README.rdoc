@@ -1,7 +1,14 @@
 == README
+This is my project for the Career Foundry web development course, Ruby on Rails web app.
 
-I found this lesson rather frustrating but figured it out eventually(with some help), Cheers Panos.
-This will eventually be my new app.
+As this is a test site and will not be going live I have included the Less variables
+on some of the stylesheets as a reference for myself for this project. I am aware this 
+is not best practice and not the DRY principle.
+
+Some of the commented out CSS and HTML is also being left in (for now) as a reference, 
+I could/should use github for this but for now i'd like a quick visual reference as it's
+a project I will may come back to to test ideas out.
+
 
 Things you may want to cover:
 

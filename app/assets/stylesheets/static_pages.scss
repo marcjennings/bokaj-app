@@ -42,7 +42,7 @@ h4 {
 }
 
 h1, h2, h3, p {
-  color: #38b4c1;
+  color: $blue-main;
   font-size: 2em;
 }
 
@@ -100,7 +100,7 @@ p#p06 {
 }
 
 .nav.navbar-nav li a {
-  color: #38b4c1;
+  color: $blue-main;
   font-weight: 400;
   margin-top: 0px;
   padding-top: 08px;
@@ -124,11 +124,20 @@ p#p06 {
 .navbar-toggle {
   background-color: $blue-main;
   border: 0;
+  border-radius: 0px;
 }
 
 .navbar-fixed-top .navbar-toggle:hover {
   background-color: $blue-main;
   border: 0;
+}
+
+.navbar-collapse.collapse.in {
+  border-color: $black-main;
+  border: 0;
+  border-radius: 0;
+  background-color: $black-main;
+  margin-top: 30px;
 }
 
 .form-group input {
@@ -142,11 +151,11 @@ p#p06 {
 
 // Footer.
 .footer.footer {
-  height: 40px;
   background-color: $black-main;
-  position: fixed;
-  bottom: 0;
   width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 0px;
 }
 
 .footer p {
@@ -168,21 +177,32 @@ p#p06 {
   text-align: center;
 }
 
-#notice {
-  color: $black-main;
-  font-weight: 600;
+#alerts {
+  position: absolute;
+  top: 410px;
 }
 
-#notice.alert-info {
+.alert-info {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#alerts h4 {
+  width: 100%;
   background-color: $blue-main;
   border: 0;
   border-radius: 0;
-  margin-top: 10px;
+  padding: 10px;
+  font-size: 2em;
+  color: $black-main;
+  font-weight: 600;
+  text-align: center;
+  // margin-top: 100px;
 }
 // // ends Alert and  Notice */
 
 // Index page.
-body.static_pages {  //had been changed to body only for image but didnt work//
+body.static_pages { 
   background: $picture1, linear-gradient(to bottom, $blue-tint, $black-tint); // *
   background-blend-mode: multiply;
   background-repeat: no-repeat;
@@ -191,64 +211,6 @@ body.static_pages {  //had been changed to body only for image but didnt work//
   height: 100vh;
   background-size: cover;
 }
-
-// #index {
-//   height: 100%;
-//   margin: 0px;
-//   background-image: 
-//     linear-gradient(
-//       $blue-tint,
-//       $black-tint
-//       );
-// }
-
-// ** Unused CSS, remove when finalised ** //
-
-// hr.style2 {
-//   border-top: 10px double #38b4c1;
-//   width: 100%;
-// }
-
-// .btn.btn-default {
-//   background-color: none;
-//   border-radius: 0;
-//   border-style: white;
-//   color: black;
-//   font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
-//   text-decoration: none;
-// }
-
-// .btn.btn-default:hover {
-//   background-color: none;
-//   color: white;
-//   outline-style: white
-// }
-
-// .btn.btn-default:active {
-//   background-color: #1b1b1f;
-//   border: #1b1b1f;
-// }
-
-// .col-center-block {
-//     float: none;
-//     display: block;
-//     margin-left: auto;
-//     margin-right: auto;
-// }
-
-// ** end Unused CSS, remove when finalised ** //
-// ends Index page.
-
-// * Home page //
-// #home {
-//   height: 100%;
-//   margin: 0px;
-//   background-image: 
-//     linear-gradient(
-//       $blue-tint,
-//       $black-tint
-//       );
-// }
 
 #resrunlogo { 
   margin-top: 40px;
@@ -262,6 +224,7 @@ body.static_pages {  //had been changed to body only for image but didnt work//
   color: $white-tint;
   margin: 0 auto;
   margin-top: 50px;
+  margin-bottom: 10px;
   text-align: center;
   line-height: 1;
   word-spacing: 0px;
@@ -271,14 +234,14 @@ body.static_pages {  //had been changed to body only for image but didnt work//
 }
 
 #intro h3 {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 2.5em;
+  color: white;
+  font-size: 3.5em;
   font-weight: 200;
+  line-height: 0.7;
   margin: 0 auto;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 70px;
   text-align: center;
-
 }
 
 #date h2 {
@@ -309,8 +272,12 @@ hr.style5 {
   width: 100%;
 }
 
+// #reg-btn {
+//   margin-top: 60px;
+// }
+
 .btn.btn-lg {
-  font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
+  font-family: Azo Sans, Arimo, Futura, Helvetica, Arial, sans-serif;
   background-color: none;
   border-radius: 0;
   color: white;
@@ -324,100 +291,9 @@ hr.style5 {
   color: rgb(56, 180, 193);
   outline-style: white;
   border: 4px double rgb(56, 180, 193);
-
 }
 
-// body.static_pages.home {  //had been changed to body only for image but didnt work//
-//   background: $picture1, linear-gradient(to bottom, $blue-tint, $black-tint);
-//   background-blend-mode: multiply;
-//   position: relative;
-//   width: 100%;
-//   height: 100vh;
-//   background-size: cover;
-//   margin-bottom: 0;
-//   margin-top: 50px;
-// }
-// * ends Home page //
 
-// Login page.
-
-
-
-
-
-// body.static_pages.login {
-//   background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
-//   background-blend-mode: multiply;
-//   position: relative;
-//   width: 100%;
-//   height: 100vh;
-//   background-size: cover;
-//   margin-bottom: 0;
-//   // margin-top: 50px;
-// }
-
-// #login-black {
-//   background-color: rgba(56, 180, 193, 0.6); // * Black as rgba. *
-//   height: 50px;
-//   width: 500px;
-//   margin-top: 300px;
-// }
-
-// #login-black:hover {
-//   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
-//   height: 50px;
-//   width: 500px;
-//   margin-top: 300px;
-// }
-
-// #login-back-btn {
-//   margin-top: 20px;
-// }
-// ends Login page.
-
-// Forgot Your Password.
-#forgot-password {
-  background-color: $blue-main;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  margin-bottom: 0;
-  margin-top: 50px;
-}
-
-#forgot-password  h4 {
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0 auto;
-  margin-top: 150px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 6em;
-}
-
-#forgot-password label {
-  color: white;
-  font-weight: 400;
-}
-
-#forgot-password input#user_email {
-  background-color: $black-tint;
-  padding: 10px;
-  width: 70%;
-}
-
-#forgot-password input:focus {
-  outline: none;
-}
-
-#forgot-password input.btn.btn-sm:hover {
-  color: $black-tint;
-  background-color: none;
-  outline-style: $black-tint;
-  border: 4px double $black-tint;
-}
-// ends Forgot Your Password
 
 // About page.
 body.static_pages.about {
@@ -425,9 +301,43 @@ body.static_pages.about {
   background-blend-mode: multiply;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   margin-bottom: 0;
+}
+
+#center-block {
+  height: 100%;
+}
+
+ #my-center-block {
+  background-color: $black-tint1;
+  height: 100vh;
+  width: 400px;
+  // margin-top: 100px;
+  // margin-left: 40px;
+  // margin-right: 40px;
+  // padding: 10px;
+  display: inline-block;
+  // float: none;
+  vertical-align: top;
+}
+
+#my-center-block h4{
+  color: $white-tint;
+  margin: 0 auto;
+  margin-top: 20px;
+  line-height: 1;
+  word-spacing: 0px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+#my-inner-block {
+  margin-top: 90px;
+  // padding-left: 15px;
+  // padding-right: 15px;
 }
 
 #about {
@@ -461,25 +371,23 @@ body.static_pages.contact {
   margin-bottom: 0;
 }
 
-#contact {
-  padding: 0px;
-}
+// #contact {
+//   padding: 0px;
+// }
 
-#contact-info {
-  margin: 0 auto;
-  margin-top: 80px;
-  height: 90%;
-}
-
-// #info-black {
-//   background-color: $black-tint; 
-//   height: 100%;
+// #contact-info {
+//   margin: 0 auto;
+//   margin-top: 80px;
+//   height: 90%;
 // }
 
 #contact-back-btn {
   margin-top: 100px;
 }
 
+.form-control {
+  padding: 10px;
+}
 // contact form.
 #name.form-control {
   background-color: $blue-main;
@@ -528,7 +436,10 @@ body.static_pages.contact {
   height: 100vh;
   background-size: cover;
   margin-bottom: 0;
-  margin-top: 50px;
+}
+
+#thank-you {
+  margin-top: 80px;
 }
 
 #thank-you h4 {
@@ -542,233 +453,136 @@ body.static_pages.contact {
 }
 // end Thank You page.
 
-// ends Navbar.
+/* Media Queries ------------------ */
+@media (max-width: 767px) {
+  body.static_pages {
+    background: $blue-tint;
+  }
+}
 
-// Expanding Search Bar
-// .sb-search {
-//   position: relative;
-//   margin-top: 10px;
-//   width: 0%;
-//   min-width: 60px;
-//   height: 60px;
-//   float: right;
-//   overflow: hidden;
+@media (max-width: 766px) {
+    #intro h4 {
+    margin-top: 20px;
+    font-size: 3.5em;
+    line-height: 0.9;
+  }
 
-//   -webkit-transition: width 0.3s;
-//   -moz-transition: width 0.3s;
-//   transition: width 0.3s;
+  #home-date h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+}
 
-//   -webkit-backface-visibility: hidden;
-// }
+@media (max-width: 414px) {
+  #intro {
+    margin-top: 100px;
+  }
+  
+  #intro h4 {
+    color: $white-tint;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 05px;
+    text-align: center;
+    line-height: 1;
+    word-spacing: 0px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-size: 5em;
+    }
 
-// .sb-search-input {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   border: none;
-//   outline: none;
-//   background: #38b4c1;
-//   width: 100%;
-//   height: 60px;
-//   margin: 0;
-//   z-index: 10;
-//   padding: 20px 65px 20px 20px;
-//   font-family: inherit;
-//   font-size: 20px;
-//   color: #fff;
-// }
+  #intro h3 {
+    margin-top: 10px;
+    line-height: 0.3;
+  }
 
-// input[type="search"].sb-search-input {
-//   -webkit-appearance: none;
-//   -webkit-border-radius: 0px;
-// }
+  #my-center-block {
+    background-color: $black-tint1;
+    height: 100vh;
+    width: 100%;
+  }
 
-// .sb-search-input::-webkit-input-placeholder {
-//   color: #efb480;
-// }
+  #my-inner-block h4 {
+    font-size: 3em;
+  }
 
-// .sb-search-input:-moz-placeholder {
-//   color: #efb480;
-// }
+  #thank-you h4 {
+    font-size: 4em;
+    margin-top: 80px;
+  }
 
-// .sb-search-input::-moz-placeholder {
-//   color: #efb480;
-// }
+  p#p01-white {
+    font-size: 2em;
+    letter-spacing: -0.5px;
+    line-height: 115%;
+  }
+}
 
-// .sb-search-input:-ms-input-placeholder {
-//   color: #efb480;
-// }
+@media (max-width: 375px) {
+  #intro h4 {
+    font-size: 4.5em;
+  }
+}
 
-// .sb-icon-search,
-// .sb-search-submit  {
-//   width: 60px;
-//   height: 60px;
-//   display: block;
-//   position: absolute;
-//   right: 0;
-//   top: 0;
-//   padding: 0;
-//   margin: 0;
-//   line-height: 60px;
-//   text-align: center;
-//   cursor: pointer;
-// }
+@media (max-width: 320px) {
+  #intro h4 {
+    margin-top: 05px;
+    font-size: 3.5em;
+    line-height: 0.9;
+    letter-spacing: -.4px;
+  }
+  
+  #intro h3 {
+    color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 0.3;
+  }
 
-// .sb-search-submit {
-//   background: #fff; /* IE needs this */
-//   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
-//     filter: alpha(opacity=0); /* IE 5-7 */
-//     opacity: 0;
-//   color: transparent;
-//   border: none;
-//   outline: none;
-//   z-index: -1;
-// }
+  hr {
+    margin-top: 05px;
+    margin-bottom: 10px;
+  }
 
-// .sb-icon-search {
-//   color: #fff;
-//   background: #38b4c1;
-//   z-index: 90;
-//   font-size: 22px;
-//   font-family: 'icomoon';
-//   speak: none;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-variant: normal;
-//   text-transform: none;
-//   -webkit-font-smoothing: antialiased;
-// }
+  #my-inner-block h4 {
+    margin-top: 10px;
+  }
 
-// .sb-icon-search:before {
-//   content: "\e000";
-// }
+   #thank-you h4 {
+    font-size: 3.5em;
+    margin-top: 80px;
+  }
 
-// .sb-search.sb-search-open,
-// .no-js .sb-search {
-//   width: 100%;
-// }
+    p#p01-white {
+    font-size: 1.7em;
+    letter-spacing: -0.5px;
+    line-height: 115%;
+  }
+}
 
-// .sb-search.sb-search-open .sb-icon-search,
-// .no-js .sb-search .sb-icon-search {
-//   background: #da6d0d;
-//   color: #fff;
-//   z-index: 11;
-// }
-
-// .sb-search.sb-search-open .sb-search-submit,
-// .no-js .sb-search .sb-search-submit {
-//   z-index: 90;
-// }
-// ends Expanding Search Bar
-
-// ** Unused CSS, remove when finalised ** //
-
-// #login {
-//   height: 100%;
-//   margin: 0px; 
-//   background-image: 
-//     linear-gradient(
-//       $blue-tint,
-//       $black-tint
-//       );
-// }
-
-// #contact {
-//   height: 100%;
-//   margin: 0px; 
-//   background-image: 
-//     linear-gradient(
-//       $blue-tint,
-//       $black-tint
-//       );
-// }
-
-// #contact-blue {
-//   background-color: rgba(56, 180, 193, 0.6); // * Blue as rgba. *
-//   height: 294px;
-//   width: 400px;
-//   margin-right: 10px;
-// }
-
-// #contact-black {
-//   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
-//   height: 500px;
-//   width: 500px;
-//   padding: 10px;
-//   margin: 05px;
-// }
-
-// .carousel-indicators {
-//     bottom: -50px;
+// @media (min-width: 414px) {
+//   #intro h3 {
+//     color: white;
+//     font-size: 3.5em;
+//     font-weight: 200;
+//     line-height: 0.7;
+//     margin: 0 auto;
+//     margin-top: 10px;
+//     margin-bottom: 40px;
+//     text-align: center;
 //   }
-//  .carousel-inner {
-//     margin-bottom: 50px;
-//  }
-
-//  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
-//   position: static;
-//   display: block;
-//   width: auto;
-//   margin-top: 310px;
 // }
 
-// #carousel-caption {
-//   margin-top: 100px;
+
+
+// @media (max-width: 320px) {
+//   #about {
+//     width: 90%;
+//     margin-left: 5px;
+//     margin-right: 5px;
+//   }
 // }
-
-// #about-blue {
-//   background-color: rgba(56, 180, 193, 0.6); // * Blue as rgba. *
-//   height: 294px;
-// }
-
-// colour blocks.
-// #black {
-//   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
-//   height: 500px;
-//   width: 380px;
-//   padding: 10px;
-//   margin: 05px;
-// }
-
-// #blue {
-//   background-color: rgba(56, 180, 193, 0.6); // * Blue as rgba. *
-//   height: 500px;
-//   width: 380px;
-//   padding: 10px;
-//   margin: 05px;
-// }
-// ends colour blocks.
-
-//  old Login page.
-// body.static_pages.login {
-//   background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
-//   background-blend-mode: multiply;
-//   position: relative;
-//   width: 100%;
-//   height: 100vh;
-//   background-size: cover;
-//   margin-bottom: 0;
-//   // margin-top: 50px;
-// }
-
-// #login-black {
-//   background-color: rgba(56, 180, 193, 0.6); // * Black as rgba. *
-//   height: 50px;
-//   width: 500px;
-//   margin-top: 300px;
-// }
-
-// #login-black:hover {
-//   background-color: rgba(1, 1, 1, 0.6); // * Black as rgba. *
-//   height: 50px;
-//   width: 500px;
-//   margin-top: 300px;
-// }
-
-// #login-back-btn {
-//   margin-top: 20px;
-// }
-// ends old Login page.
-
-// ** end Unused CSS, remove when finalised ** //
-
