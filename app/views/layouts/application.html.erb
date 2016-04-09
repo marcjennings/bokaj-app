@@ -43,15 +43,17 @@
         </div> <!--end navbar header -->
               
         <div class="collapse navbar-collapse" id="myNavbar">
-          <form class="navbar-form navbar-right" role="search">
+          <!-- form class="navbar-form navbar-right" role="search" -->
             
-            <div class="form-group">
-              <%= form_tag("/products", method: "get") do %>
-                <%= text_field_tag(:q) %>
-                <%= submit_tag("Search") %>
+
+              <%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
+                <div class="form-group">
+                  <%= text_field_tag(:q) %>
+                  <%= submit_tag("Search") %>
+                </div>
               <% end %>
-            </div>
-          </form>
+            
+          <!-- /form -->
 
         
         <ul class="nav navbar-nav navbar-right" style="clear:both;">
@@ -69,7 +71,7 @@
      </div> <!-- end container fluid -->
     </nav> <!-- end navbar -->
 
-<%= yield %>
+      <%= yield %>
 
     <!-- footer -->
     <footer class="footer">

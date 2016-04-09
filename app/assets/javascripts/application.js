@@ -9,11 +9,12 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
+// 
+//Removed this file from line 16 as it was causing angularjs to load twice <!-- require turbolinks -->
 //
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require turbolinks
 //= require angular
 //= require angular-resource
 //= require_tree .

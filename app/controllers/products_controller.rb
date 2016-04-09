@@ -7,11 +7,23 @@ class ProductsController < ApplicationController
   def index
    if params[:q]
       search_term = params[:q]
-      @products = Product.where("name LIKE ?", "%#{search_term}%")
+      if Rails.env.production?
+        @products = Product.where("name ILIKE ?", "%#{search_term}%").order(:name)
+      else
+        @products = Product.where("name like ?", "%#{search_term}%").order(:name)
+      end  
     else
       @products = Product.order(:name)
     end
-    respond_with @products
+
+    if @products.count == 1
+      redirect_to product_url(@products.first)
+    elsif @products.count == 0
+      redirect_to root_url
+    else
+       # shows the page with products (more than one) found.  
+    end 
+    # respond_with @products
   end
 
   # def contact
@@ -26,7 +38,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    byebug
+    # byebug
     @product = Product.new
     render layout: 'admin'
   end
