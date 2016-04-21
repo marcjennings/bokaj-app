@@ -9,20 +9,20 @@
   <%= csrf_meta_tags %>
   <title>BokajApp</title>
 
+  <link rel="stylesheet" href="https://checkout.stripe.com/v3/checkout/button.css"></link>
+  
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
     <!-- Adobe Typekit -->
   <script src="https://use.typekit.net/uji3sbq.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <!-- ends Adobe Typekit -->
 
-  <link rel="stylesheet" href="https://checkout.stripe.com/v3/checkout/button.css"></link>
-  
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
 </head>
 
-  <body class="<%= controller_name + ' ' + action_name %>">
+<body class="<%= controller_name + ' ' + action_name %>">
 
     <!-- navbar starts here -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -81,5 +81,5 @@
     </footer>
     <!-- end footer -->
 
-  </body>
+</body>
 </html>

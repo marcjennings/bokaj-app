@@ -13,7 +13,7 @@ class ProductsController < ApplicationController
         @products = Product.where("name like ?", "%#{search_term}%").order(:name)
       end  
     else
-      @products = Product.order(:name)
+      @products = Product.order(:name)   
     end
 
     if @products.count == 1
