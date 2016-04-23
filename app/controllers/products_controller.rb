@@ -18,9 +18,10 @@ class ProductsController < ApplicationController
 
     if @products.count == 1
       redirect_to product_url(@products.first)
-    elsif @products.count == 0
-      redirect_to root_url
+    # elsif @products.count == 0
+      # redirect_to root_url
     else
+      redirect_to root_url
        # shows the page with products (more than one) found.  
     end 
     # respond_with @products
