@@ -72,6 +72,7 @@ body.user_registrations.create {
 
  #user_email {
   border: 0;
+  border-radius: 0;
   background-color: $blue-main;
   width: 100%;
   height: 35px;
@@ -92,6 +93,7 @@ input:-webkit-autofill {
 
 #user_password {
   border: 0;
+  border-radius: 0;
   background-color: $blue-main;
   width: 100%;
   height: 35px;
@@ -100,6 +102,7 @@ input:-webkit-autofill {
 
 #user_password_confirmation {
   border: 0;
+  border-radius: 0;
   background-color: $blue-main;
   width: 100%;
   height: 35px;
@@ -230,6 +233,7 @@ input:-webkit-autofill {
 
 #forgot-password input#user_email {
   background-color: $black-tint;
+  border-radius: 0;
   padding: 10px;
   width: 70%;
 }
