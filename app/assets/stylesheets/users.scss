@@ -18,14 +18,64 @@ $white-tint1: rgba(255, 255, 255, 0.5);
 // ends Colours and colour tints.
 
 // Fonts.
-$header: font-family(Justus Pro);
+h1,
+h2, {
+  font-family: Azo Sans, Arimo, Futura, Helvetica, Arial, sans-serif;
+}
 
-// p#p06 {
-//   font-size: 1em;
-//   font-weight: 500;
-//   color: $blue-main;
-// }
-// ends fonts
+h4 {
+  font-family: "Justus Pro", "Bitter";
+}
+
+h1, h2, h3, p {
+  color: $blue-main;
+  font-size: 2em;
+}
+
+p#p01 {
+  font-size: 1.4em;
+  letter-spacing: -0.5px;
+  line-height: 115%;
+  color: $blue-main;
+}
+
+p#p01-white {
+  font-size: 1.4em;
+  letter-spacing: -0.5px;
+  line-height: 115%;
+  color: white;
+}
+
+p#p02 {
+  font-size: 1.2em;
+  line-height: 120%;
+  color: $blue-main;
+}
+
+p#p03 {
+  font-size: 2.5em;
+}
+
+p#p04 {
+  font-size: 3em;
+  font-weight: 200;
+   color: white;
+}
+
+p#p05 {
+  font-size: 2em;
+  font-weight: 200;
+  color: white;
+  margin-top: 20px;
+}
+
+p#p06 {
+  font-size: 1em;
+  font-weight: 500;
+  color: $blue-main;
+  margin-bottom: 05px;
+}
+// end Fonts.
 
 body.sessions.new {  //had been changed to body only for image but didnt work//
   background: $picture2, linear-gradient(to bottom, $blue-tint, $black-tint);
@@ -128,7 +178,7 @@ input:-webkit-autofill {
  }
 
 .devise-links a {
-  font-family: Justus Pro;
+  font-family: Justus Pro, Bitter;
   font-size: 1.5em;
   font-weight: 400;
  	margin-bottom: 50px;
@@ -142,7 +192,7 @@ input:-webkit-autofill {
 
 
 #error_explanation h2 {
-  font-family: Justus Pro;
+  font-family: Justus Pro, Bitter;
   font-size: 4em;
   font-weight: 800;
   color: $blue-main;
@@ -166,16 +216,16 @@ input:-webkit-autofill {
 //   vertical-align: top;
 // }
 
-// #my-center-block h4{
-//   color: $white-tint;
-//   margin: 0 auto;
-//   margin-top: 20px;
-//   line-height: 1;
-//   word-spacing: 0px;
-//   letter-spacing: 2px;
-//   font-weight: bold;
-//   font-size: 4em;
-// }
+#my-center-block h4{
+  color: $white-tint;
+  margin: 0 auto;
+  margin-top: 20px;
+  line-height: 1;
+  word-spacing: 0px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 4em;
+}
 
 // #my-inner-block {
 //   margin-top: 90px;

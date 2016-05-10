@@ -28,17 +28,13 @@ $white-tint1: rgba(255, 255, 255, 0.5);
 // ends Colours and colour tints.
 
 // Fonts.
-$header: font-family(Justus Pro);
-// ends fonts
-
-// Fonts.
 h1,
 h2, {
   font-family: Azo Sans, Arimo, Futura, Helvetica, Arial, sans-serif;
 }
 
 h4 {
-  font-family: Justus Pro;
+  font-family: "Justus Pro", "Bitter";
 }
 
 h1, h2, h3, p {
@@ -480,6 +476,7 @@ body.static_pages.contact {
   }
   
   #intro h4 {
+    // font-family: Justus Pro;
     color: $white-tint;
     margin: 0 auto;
     margin-top: 20px;
@@ -488,8 +485,8 @@ body.static_pages.contact {
     line-height: 1;
     word-spacing: 0px;
     letter-spacing: -1px;
-    font-weight: bold;
-    font-size: 5em;
+    font-weight: 700;
+    font-size: 2em;
     }
 
   #intro h3 {
@@ -527,10 +524,12 @@ body.static_pages.contact {
 
 @media (max-width: 320px) {
   #intro h4 {
+    // font-family: Justus Pro;
     margin-top: 05px;
     font-size: 3.5em;
     line-height: 0.9;
     letter-spacing: -.4px;
+    font-weight: 700;
   }
   
   #intro h3 {
