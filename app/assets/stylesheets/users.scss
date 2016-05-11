@@ -24,7 +24,7 @@ h2, {
 }
 
 h4 {
-  font-family: "justus-pro", Bitter, sans-serif;
+  font-family: "justus-pro", Bitter, Georgia, serif;
 }
 
 h1, h2, h3, p {
@@ -172,13 +172,13 @@ input:-webkit-autofill {
 
 .field input {
   color: $black-main;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 1px;
   padding: 10px;
  }
 
 .devise-links a {
-  font-family: Justus Pro, Bitter;
+  font-family: "justus-pro", Bitter, Georgia, serif;
   font-size: 1.5em;
   font-weight: 400;
  	margin-bottom: 50px;
@@ -192,7 +192,7 @@ input:-webkit-autofill {
 
 
 #error_explanation h2 {
-  font-family: Justus Pro, Bitter;
+  font-family: "justus-pro", Bitter, Georgia, serif;
   font-size: 4em;
   font-weight: 800;
   color: $blue-main;
@@ -216,14 +216,14 @@ input:-webkit-autofill {
 //   vertical-align: top;
 // }
 
-#my-center-block h4{
+#my-center-block h4 {
   color: $white-tint;
   margin: 0 auto;
   margin-top: 20px;
   line-height: 1;
   word-spacing: 0px;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 4em;
 }
 
@@ -272,7 +272,7 @@ input:-webkit-autofill {
   margin-top: 150px;
   margin-bottom: 20px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 6em;
 }
 

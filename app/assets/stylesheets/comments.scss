@@ -10,6 +10,15 @@ h1, h2, h3, p {
   font-size: 2em;
 }
 
+h1,
+h2, {
+  font-family: "azo-sans-web", Futura, Helvetica, Arial, sans-serif;
+}
+
+h4 {
+  font-family: "justus-pro", Bitter, Georgia, serif;
+}
+
 p#p01 {
   font-size: 1.4em;
   letter-spacing: -0.5px;
@@ -133,7 +142,7 @@ body.comments.index {
 #new_comment label {
   // font-family: Justus Pro;
   font-size: 2em;
-  font-weight: 800;
+  font-weight: 700;
   color: $white-tint1;
   margin-top: 15px;
 }
@@ -164,7 +173,7 @@ body.comments.index {
 }
 
 .submit.btn.btn-sm {
-  font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
+  font-family: "azo-sans-web", Futura, Helvetica, Arial, sans-serif;
   font-size: 12px;
   background-color: none;
   border-radius: 0;

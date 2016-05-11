@@ -34,7 +34,7 @@ h2, {
 }
 
 h4 {
-  font-family: "justus-pro", Bitter, sans-serif;
+  font-family: "justus-pro", Bitter, Georgia, serif;
 }
 
 h1, h2, h3, p {
@@ -69,7 +69,7 @@ p#p03 {
 p#p04 {
   font-size: 3em;
   font-weight: 200;
-   color: white;
+  color: white;
 }
 
 p#p05 {
@@ -226,7 +226,7 @@ body.static_pages {
   line-height: 1;
   word-spacing: 0px;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 6em;
 }
 
@@ -274,7 +274,7 @@ hr.style5 {
 // }
 
 .btn.btn-lg {
-  font-family: Azo Sans, Arimo, Futura, Helvetica, Arial, sans-serif;
+  font-family: "azo-sans-web", Futura, Helvetica, Arial, sans-serif;
   background-color: none;
   border-radius: 0;
   color: white;
@@ -289,8 +289,6 @@ hr.style5 {
   outline-style: white;
   border: 4px double rgb(56, 180, 193);
 }
-
-
 
 // About page.
 body.static_pages.about {
@@ -327,7 +325,7 @@ body.static_pages.about {
   line-height: 1;
   word-spacing: 0px;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 4em;
 }
 
@@ -341,14 +339,14 @@ body.static_pages.about {
   padding: 0px;
 }
 
-#about h4{
+#about h4 {
   color: $white-tint;
   margin: 0 auto;
   margin-top: 20px;
   line-height: 1;
   word-spacing: 0px;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2em;
 }
 
@@ -412,7 +410,7 @@ body.static_pages.contact {
  }
 
 .btn.btn-sm {
-  font-family: Arimo, Futura, Helvetica, Arial, sans-serif;
+  font-family: "azo-sans-web", Futura, Helvetica, Arial, sans-serif;
   font-size: 12px;
   background-color: none;
   border-radius: 0;
@@ -525,7 +523,7 @@ body.static_pages.contact {
 
 @media (max-width: 320px) {
   #intro h4 {
-    // font-family: Justus Pro;
+   
     margin-top: 05px;
     font-size: 3.5em;
     line-height: 0.9;
