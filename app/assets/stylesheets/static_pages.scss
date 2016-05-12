@@ -202,7 +202,7 @@ p#p06 {
 body.static_pages { 
   background: $picture1, linear-gradient(to bottom, $blue-tint, $black-tint); // *
   background-blend-mode: multiply;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -418,7 +418,7 @@ body.static_pages.contact {
   border: 4px double white;
   background: none; 
   padding: 6px 10px;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 }
 
  // end contact form.
@@ -457,9 +457,9 @@ body.static_pages.contact {
 
 @media (max-width: 766px) {
     #intro h4 {
-    margin-top: 20px;
-    font-size: 3.5em;
-    line-height: 0.9;
+      margin-top: 20px;
+      font-size: 3.5em;
+      line-height: 0.9;
   }
 
   #home-date h3 {
@@ -470,7 +470,7 @@ body.static_pages.contact {
 
 @media (max-width: 414px) {
   #intro {
-    margin-top: 100px;
+    margin-top: 90px;
   }
   
   #intro h4 {
@@ -523,7 +523,6 @@ body.static_pages.contact {
 
 @media (max-width: 320px) {
   #intro h4 {
-   
     margin-top: 05px;
     font-size: 3.5em;
     line-height: 0.9;
@@ -547,8 +546,16 @@ body.static_pages.contact {
     margin-bottom: 10px;
   }
 
-  #my-inner-block h4 {
-    margin-top: 10px;
+
+  #my-center-block h4 {
+    font-size: 3em;
+    margin-top: 02px;
+    margin-bottom: 20px;
+  }
+  
+  #my-inner-block  {
+    margin-top: 85px;
+    
   }
 
    #thank-you h4 {
